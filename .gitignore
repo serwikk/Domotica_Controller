@@ -1,0 +1,22 @@
+
+# Archivos generados por IDEs
+.venv
+
+# Archivos para hacer pruebas
+sensores_y_actuadores/pruebas_de_codigo.py
+simuladores/pruebas_de_codigo.py
+
+# Archivos de byte en Python
+sensores_y_actuadores/__pycache__
+simuladores/__pycache__
+espacio_inmueble/__pycache__
+__pycache__
+# Archivos drawio
+Arquitectura-diseño.drawio
+Arquitectura-diseño.drawio:Zone.Identifier
+
+# Archivos del proyecto
+archivos_proyecto
+
+# Archivos de cuando están abiertos los excel, word o powerpoint
+docs/~$info_sensores.xlsx

@@ -1,0 +1,304 @@
+2024-07-18 01:15:54,468 - csv_logger_handler - INFO - Obtenido el valor 25.65 de la hora 1 del mes de julio
+2024-07-18 01:15:54,468 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 01:15:54,468 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 01:22:39,331 - csv_logger_handler - INFO - Obtenido el valor 25.65 de la hora 1 del mes de julio
+2024-07-18 01:22:39,332 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 01:22:39,332 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 01:23:03,756 - csv_logger_handler - INFO - Obtenido el valor 25.65 de la hora 1 del mes de julio
+2024-07-18 01:23:03,757 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 01:23:03,757 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:16:30,190 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:16:30,190 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:16:30,190 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:31:33,212 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:31:33,213 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:31:33,213 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:33:12,186 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:33:12,187 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:33:12,187 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:33:31,932 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:33:31,932 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:33:31,932 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:33:58,137 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:33:58,137 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:33:58,137 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:35:54,774 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:35:54,774 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:35:54,774 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:38:12,566 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:38:12,567 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:38:12,567 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:38:25,659 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:38:25,659 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:38:25,659 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:42:46,892 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:42:46,892 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:42:46,892 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:43:22,977 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:43:22,978 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:43:22,978 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:48:20,372 - csv_logger_handler - INFO - Obtenido el valor 29.00 de la hora 23 del mes de julio
+2024-07-18 23:48:20,373 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:48:20,373 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:49:40,923 - csv_logger_handler - INFO - Obtenido el valor 30.73 de la hora 12 del mes de julio
+2024-07-18 23:49:40,923 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-07-18 23:49:40,923 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 20:29:49,623 - csv_logger_handler - INFO - Obtenido el valor 30.73 de la hora 12 del mes de julio
+2024-08-01 20:29:49,631 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 20:29:49,631 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 20:31:53,372 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 20:31:53,373 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 20:31:53,373 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:17:57,826 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 21:17:57,827 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:17:57,827 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:21:37,009 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 21:21:37,009 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:21:37,009 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:34:34,823 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 21:34:34,823 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:34:34,823 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:35:37,180 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 21:35:37,180 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:35:37,180 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:48:27,633 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 21:48:27,634 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 21:48:27,634 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 22:04:01,312 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 22:04:01,312 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 22:04:01,312 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 22:05:18,898 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-01 22:05:18,899 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-01 22:05:18,899 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:06:22,161 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 13:06:22,162 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:06:22,162 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:06:44,986 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 13:06:44,987 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:06:44,987 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:08:20,962 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 13:08:20,963 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:08:20,963 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:09:01,936 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 13:09:01,936 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:09:01,936 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:22:56,841 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 13:22:56,841 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 13:22:56,841 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:26:12,278 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 16:26:12,278 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:26:12,278 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:30:39,725 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 12 del mes de agosto
+2024-08-03 16:30:39,725 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:30:39,725 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:31:05,648 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:31:05,648 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:31:05,648 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:31:28,780 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:31:28,781 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:31:28,781 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:33:42,118 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:33:42,118 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:33:42,118 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:39:06,087 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:39:06,087 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:39:06,087 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:40:19,179 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:40:19,179 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:40:19,179 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:43:57,130 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:43:57,131 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:43:57,131 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:46:15,857 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:46:15,857 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:46:15,857 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:47:36,276 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:47:36,276 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:47:36,276 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:47:46,192 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:47:46,192 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:47:46,192 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:48:34,703 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:48:34,703 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:48:34,703 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:49:22,798 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:49:22,799 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:49:22,799 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:54:13,293 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 16:54:13,293 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 16:54:13,293 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:08:11,697 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:10:01,740 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:10:01,740 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:10:01,740 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:10:15,778 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:10:15,778 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:10:15,778 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:10:55,420 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:10:55,420 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:10:55,420 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:11:51,990 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:11:51,990 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:11:51,990 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:12:09,603 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:12:09,603 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:12:09,603 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:12:27,861 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:12:27,861 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:12:27,861 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:12:46,621 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:12:46,621 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:12:46,621 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:13:12,000 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:13:12,001 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:13:12,001 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:13:22,850 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:13:22,850 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:13:22,850 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:14:15,665 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:14:15,666 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:14:15,666 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:14:26,835 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:14:26,835 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:14:26,835 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:14:32,507 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:14:32,508 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:14:32,508 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:17:15,550 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:17:15,550 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:17:15,550 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:19:24,292 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:19:24,292 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:19:24,292 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:30:29,666 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:30:29,667 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:30:29,667 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:33:28,612 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:33:28,613 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:33:28,613 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:33:39,803 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:33:39,804 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:33:39,804 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:34:19,708 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:34:19,708 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:34:19,708 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:37:05,848 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:37:05,849 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:37:05,849 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:42:37,732 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:42:37,732 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:42:37,732 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:43:26,884 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:43:26,884 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:43:26,884 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:44:54,176 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:44:54,177 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:44:54,177 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:45:20,342 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:45:20,342 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:45:20,342 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:53:00,242 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:53:00,242 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:53:00,242 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:53:30,083 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:53:30,084 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:53:30,084 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:56:48,295 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:56:48,296 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:56:48,296 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:58:01,750 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:58:01,750 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:58:01,750 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:58:59,512 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 17:58:59,512 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 17:58:59,512 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:01:02,048 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 18:01:02,049 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:01:02,049 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:02:49,417 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 18:02:49,417 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:02:49,417 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:05,331 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 18:04:05,332 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:05,332 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:13,036 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 18:04:13,036 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:13,036 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:20,248 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 18:04:20,248 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:20,248 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:33,000 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 18:04:33,001 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 18:04:33,001 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:08:20,899 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 19:08:20,899 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:08:20,899 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:10:25,967 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 19:10:25,967 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:10:25,967 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:10:34,549 - csv_logger_handler - INFO - Obtenido el valor 35.67 de la hora 16 del mes de agosto
+2024-08-03 19:10:34,550 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:10:34,550 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:16:29,530 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:16:29,530 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:16:29,530 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:19:33,539 - csv_logger_handler - INFO - Obtenido el valor 24.46 de la hora 8 del mes de agosto
+2024-08-03 19:19:33,539 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:19:33,539 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:19:49,480 - csv_logger_handler - INFO - Obtenido el valor 24.46 de la hora 8 del mes de agosto
+2024-08-03 19:19:49,480 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:19:49,480 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:19:55,573 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:19:55,573 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:19:55,573 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:28:25,287 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:28:25,287 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:28:25,287 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:30:04,480 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:30:04,480 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:30:04,480 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:30:31,154 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:30:31,154 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:30:31,154 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:31:50,637 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:31:50,637 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:31:50,637 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:32:03,093 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:32:03,093 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:32:03,093 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:33:34,346 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:33:34,347 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:33:34,347 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:34:18,774 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:34:18,775 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:34:18,775 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:35:36,178 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-03 19:35:36,178 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-03 19:35:36,178 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 07:57:39,234 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 07:57:39,234 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 07:57:39,234 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:13:00,045 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:13:00,046 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:13:00,046 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:12,233 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:12,233 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:12,233 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:52,750 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:52,750 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:52,750 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:54,112 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:54,112 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:54,112 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:55,037 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:55,037 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:55,037 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:55,754 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:55,755 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:55,755 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:56,448 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:56,448 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:56,448 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:57,032 - csv_logger_handler - INFO - Obtenido el valor 32.55 de la hora 13 del mes de agosto
+2024-08-05 08:38:57,032 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-05 08:38:57,032 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina

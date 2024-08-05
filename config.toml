@@ -1,0 +1,18 @@
+[config]
+huso = "Europe/Madrid"
+habitaculo = "cocina"
+
+[lux]
+lux_max_cenit = 5000
+lux_artificial = 500
+grados_lux_directa = 60
+
+[ventanas]
+
+[ventanas.ventana1]
+orientacion = 180
+area = 120
+
+[ventanas.ventana2]
+orientacion = 90
+area = 80
