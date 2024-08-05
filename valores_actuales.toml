@@ -1,6 +1,6 @@
 [valores_magnitudes]
-temperatura = 32.34
-humedad = 48.47
+temperatura = 32.58
+humedad = 51.46
 lux = 4465.1
 
 [estado_actuadores]

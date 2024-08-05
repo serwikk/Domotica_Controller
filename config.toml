@@ -1,6 +1,7 @@
 [config]
 huso = "Europe/Madrid"
 habitaculo = "cocina"
+carpeta_logs = "logs"
 
 [lux]
 lux_max_cenit = 5000

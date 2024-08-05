@@ -12,7 +12,7 @@ def main():
 
     # Invocación de handlers
     datetime_handler = DatetimeHandler('2024-08-04 13:44:00')
-    loggerHandler = LoggerHandler('generation.log', 'generación', logging.INFO)
+    loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
     valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml', loggerHandler)
     config_tomlHandler = TOMLHandler('config.toml', loggerHandler)
 
