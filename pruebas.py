@@ -2,14 +2,15 @@ from dispositivos.sensores.sensor_temperatura import SensorTemperatura
 from dispositivos.sensores.sensor_humedad import SensorHumedad
 from dispositivos.sensores.sensor_luz import SensorLuz
 
+from dispositivos.controlador import Controlador
 
-sensor_temperatura = SensorTemperatura()
-sensor_humedad = SensorHumedad()
-sensor_luz = SensorLuz()
+from handlers.toml_handler import TOMLHandler
 
+config_tomlhandler = TOMLHandler('config.toml')
 
-temp = sensor_temperatura.obtener_valor()
-hum = sensor_humedad.obtener_valor()
-lux = sensor_luz.obtener_valor()
+habitaculo = config_tomlhandler.obtener_valor('config', 'habitaculo')
 
-print(temp, hum, lux)
+controlador = Controlador(habitaculo, nombres_sensores=['sensor_temperatura', 'sensor_humedad', 'sensor_luz'])
+
+for sensor in controlador.sensores:
+    print(controlador.sensores[sensor].obtener_valor())
