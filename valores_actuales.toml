@@ -2,7 +2,11 @@
 temperatura = 16.4
 humedad = 52.63
 lux = 2.89
+presencia = 0
+
 
 [estado_actuadores]
 persiana = 0.3
 luz = 0
+puerta = 0.7
+ventana = 0.8
