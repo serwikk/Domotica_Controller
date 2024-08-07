@@ -9,9 +9,15 @@ from handlers.logger_handler import LoggerHandler
 
 
 def main():
+    """
+    Simula los valores externos del habitáculo de las siguientes magnitudes:
+        Temperatura (ºC)
+        Humedad (%)
+        Luz (lux)
+    """
 
     # Invocación de handlers
-    datetime_handler = DatetimeHandler('2024-01-04 10:44:00')
+    datetime_handler = DatetimeHandler('2024-01-04 22:44:00')
     loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
     valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml', loggerHandler)
     config_tomlHandler = TOMLHandler('config.toml', loggerHandler)
@@ -51,14 +57,6 @@ def main():
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'lux', valor_lux)
-
-
-
-
-
-
-    
-
 
 
 if __name__=="__main__":

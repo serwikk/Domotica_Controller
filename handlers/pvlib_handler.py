@@ -71,8 +71,10 @@ class PVlibHandler:
         # Obtenemos la lux máxima definida en el apartado 'lux' de 'config.toml'
         lux_max = config_tomlHandler.obtener_valor('lux', 'lux_max_cenit')
         lux_artificial = config_tomlHandler.obtener_valor('lux', 'lux_artificial')
+        lux_noche_farolas = config_tomlHandler.obtener_valor('lux', 'lux_noche_farolas')
 
         indice_persiana = valores_actuales_tomlHandler.obtener_valor('estado_actuadores', 'persiana')
+        luz_artificial = valores_actuales_tomlHandler.obtener_valor('estado_actuadores', 'luz')
 
         # logging.info(f"Elevación: {elevacion:.02f}º, Azimut: {azimut:.02f}º")
 
@@ -91,18 +93,18 @@ class PVlibHandler:
 
             # logging.debug(azimut, orientacion_ventana - grados_lux_directa, orientacion_ventana + grados_lux_directa)
 
-            if math.sin(math.radians(elevacion)) >= 0:
-
-                if orientacion_ventana - grados_lux_directa <= azimut <= orientacion_ventana + grados_lux_directa: # Si el sol se encuentra a entre grados_lux_directa grados
-                    lux_ventanas[ventana] = lux_max * math.sin(math.radians(elevacion))
-                else:
-                    lux_ventanas[ventana]  = lux_ambiente / 2 # Divido entre dos porque lo normal es que si no entra la luz directa, sea menor el numero de lux
-
+            if orientacion_ventana - grados_lux_directa <= azimut <= orientacion_ventana + grados_lux_directa: # Si el sol se encuentra a entre grados_lux_directa grados
+                lux_ventanas[ventana] = lux_max * math.sin(math.radians(elevacion))
             else:
-                lux_ventanas[ventana] = config_tomlHandler.obtener_valor('lux', 'lux_noche_farolas')
+                lux_ventanas[ventana]  = lux_ambiente / 2 # Divido entre dos porque lo normal es que si no entra la luz directa, sea menor el numero de lux
 
         lux_final_habitaculo = max(lux_ventanas.values())
+        
+        if lux_final_habitaculo <= 0:
+            if luz_artificial:
+                lux_final_habitaculo = lux_artificial
 
-        lux_final_habitaculo = gh.generar_valor_polinomico(lux_final_habitaculo, indice_persiana)
+            else:
+                lux_final_habitaculo = gh.generar_valor_polinomico(lux_noche_farolas, indice_persiana)
 
         return round(lux_final_habitaculo, 2)
