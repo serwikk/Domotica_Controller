@@ -11,7 +11,7 @@ class Controlador():
         self.espacio = espacio
         self.id_controlador = generar_id_aleatorio(f"contr-")
         self.sensores = self.inicializar_sensores(nombres_sensores)
-        self.actuadores = self.inicializar_actuadores(nombres_actuadores)
+        #self.actuadores = self.inicializar_actuadores(nombres_actuadores)
 
     def inicializar_sensores(self, nombres_sensores):
 
