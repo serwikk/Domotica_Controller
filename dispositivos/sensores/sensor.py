@@ -1,4 +1,4 @@
-from handlers import generation_handler as fc
+from handlers.toml_handler import TOMLHandler
 
 
 class Sensor:
@@ -8,6 +8,7 @@ class Sensor:
         self.magnitud = magnitud
         self.en_funcionamiento = en_funcionamiento
         self.unidad = unidad
+        self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='valores_actuales.toml')
 
 
     def obtener_valor(self) -> float: 
@@ -18,5 +19,7 @@ class Sensor:
             float: Valor de la magnitud
         """
 
+        return self.valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', self.magnitud)
+
         
-        return fc.leer_valor_magnitud(self.magnitud, "./espacio_inmueble/valores_espacio.json")
+        

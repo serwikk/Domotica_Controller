@@ -1,5 +1,15 @@
-from handlers.generation_handler import generar_valor_polinomico
+from dispositivos.sensores.sensor_temperatura import SensorTemperatura
+from dispositivos.sensores.sensor_humedad import SensorHumedad
+from dispositivos.sensores.sensor_luz import SensorLuz
 
 
-for i in [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]:
-    print(i, round(generar_valor_polinomico(10000, i), 2))    
+sensor_temperatura = SensorTemperatura()
+sensor_humedad = SensorHumedad()
+sensor_luz = SensorLuz()
+
+
+temp = sensor_temperatura.obtener_valor()
+hum = sensor_humedad.obtener_valor()
+lux = sensor_luz.obtener_valor()
+
+print(temp, hum, lux)

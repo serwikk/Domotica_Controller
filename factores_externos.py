@@ -17,10 +17,10 @@ def main():
     """
 
     # Invocación de handlers
-    datetime_handler = DatetimeHandler('2024-01-04 22:44:00')
+    datetime_handler = DatetimeHandler('2024-04-04 19:44:00')
     loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
-    valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml', loggerHandler)
-    config_tomlHandler = TOMLHandler('config.toml', loggerHandler)
+    valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
+    config_tomlHandler = TOMLHandler('config.toml')
 
     HUSO = config_tomlHandler.obtener_valor('config', 'huso')
     HABITACULO = config_tomlHandler.obtener_valor('config', 'habitaculo')

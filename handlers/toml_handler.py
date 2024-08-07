@@ -4,10 +4,13 @@ import logging
 
 class TOMLHandler:
 
-    def __init__(self, ruta_archivo, loggerHandler):
+    def __init__(self, ruta_archivo, loggerHandler=None):
         self.ruta_archivo = ruta_archivo
         self.valores = self.cargar_toml()
-        self.loggerHandler = loggerHandler
+        if loggerHandler:
+            self.loggerHandler = LoggerHandler() # TODO
+        else:
+            self.loggerHandler = None 
 
 
     def cargar_toml(self) -> dict:
@@ -46,7 +49,8 @@ class TOMLHandler:
         
         except KeyError:
             msg = 'Sección o clave no encontrada'
-            self.loggerHandler.logger.error(msg)
+            if self.loggerHandler:
+                self.loggerHandler.logger.error(msg)
             return None
         
     
@@ -57,9 +61,13 @@ class TOMLHandler:
 
         if seccion not in self.valores:
             self.valores[seccion] = {}
-            self.loggerHandler.logger.info(f'Sección "{seccion}" creada')
+
+            if self.loggerHandler:
+                self.loggerHandler.logger.info(f'Sección "{seccion}" creada')
         
         self.valores[seccion][clave] = valor
         self.guardar_toml()
-        self.loggerHandler.logger.info(f'Clave "{clave}" actualizada en la sección "{seccion}" con el valor: {valor} ({type(valor)})')
+        
+        if self.loggerHandler:
+            self.loggerHandler.logger.info(f'Clave "{clave}" actualizada en la sección "{seccion}" con el valor: {valor} ({type(valor)})')
 

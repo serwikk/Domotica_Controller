@@ -1,9 +1,9 @@
-from handlers import generation_handler as fc
-from sensores_y_actuadores.sensor import Sensor
+from dispositivos.sensores.sensor import Sensor
+from handlers.generation_handler import generar_id_aleatorio
 
 
 class SensorLuz(Sensor):
 
-    def __init__(self, en_funcionamiento=True, unidad= "lm"):
+    def __init__(self, en_funcionamiento=True, unidad= "lx"):
         
-        super().__init__( id= fc.generar_id_aleatorio("lux-"), magnitud = "luz", en_funcionamiento = en_funcionamiento, unidad = unidad)
+        super().__init__( id= generar_id_aleatorio("lux-"), magnitud = "lux", en_funcionamiento = en_funcionamiento, unidad = unidad)
