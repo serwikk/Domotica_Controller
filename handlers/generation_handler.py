@@ -31,6 +31,12 @@ def generar_valor_distribucion_normal(valor_min: float, valor_max: float) -> flo
 
     return valor
     
+def generar_valor_polinomico(valor_max, indice):
+
+    k = 10
+
+    return valor_max * (math.log(indice * k + 1) / math.log(k + 1))
+
 #-------------------------------------------------------------------------------------------------------
 # FUNCIÓN PARA LA GENERACIÓN DE IDs
 

@@ -1,8 +1,8 @@
 [valores_magnitudes]
-temperatura = 32.58
-humedad = 51.46
-lux = 4465.1
+temperatura = 13.9
+humedad = 46.71
+lux = 1300.4
 
 [estado_actuadores]
-persiana = 90
+persiana = 0.9
 luz = 0

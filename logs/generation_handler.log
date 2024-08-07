@@ -223,3 +223,71 @@
 2024-08-05 09:27:01,473 - generation_logger_handler - INFO - Generado el valor 41.91 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
 2024-08-05 09:28:01,963 - generation_logger_handler - INFO - Agregado el umbral 0.03 al valor 32.55, sumando el valor final de 32.58
 2024-08-05 09:28:01,963 - generation_logger_handler - INFO - Generado el valor 51.46 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:24:08,620 - generation_logger_handler - INFO - Agregado el umbral 0.12 al valor 32.55, sumando el valor final de 32.67
+2024-08-07 07:24:08,620 - generation_logger_handler - INFO - Generado el valor 47.46 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:28:20,617 - generation_logger_handler - INFO - Agregado el umbral 0.47 al valor 16.82, sumando el valor final de 17.29
+2024-08-07 07:28:20,617 - generation_logger_handler - INFO - Generado el valor 43.81 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:28:29,727 - generation_logger_handler - INFO - Agregado el umbral 0.7 al valor 16.82, sumando el valor final de 17.52
+2024-08-07 07:28:29,728 - generation_logger_handler - INFO - Generado el valor 49.79 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:28:31,052 - generation_logger_handler - INFO - Agregado el umbral 0.08 al valor 16.82, sumando el valor final de 16.9
+2024-08-07 07:28:31,052 - generation_logger_handler - INFO - Generado el valor 39.6 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:28:31,883 - generation_logger_handler - INFO - Agregado el umbral 0.18 al valor 16.82, sumando el valor final de 17.0
+2024-08-07 07:28:31,883 - generation_logger_handler - INFO - Generado el valor 44.59 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:30:20,978 - generation_logger_handler - INFO - Agregado el umbral 0.64 al valor 18.19, sumando el valor final de 18.83
+2024-08-07 07:30:20,978 - generation_logger_handler - INFO - Generado el valor 47.42 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:30:24,179 - generation_logger_handler - INFO - Agregado el umbral 0.47 al valor 18.19, sumando el valor final de 18.66
+2024-08-07 07:30:24,179 - generation_logger_handler - INFO - Generado el valor 41.46 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:30:31,859 - generation_logger_handler - INFO - Agregado el umbral 0.27 al valor 14.95, sumando el valor final de 15.22
+2024-08-07 07:30:31,860 - generation_logger_handler - INFO - Generado el valor 47.99 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:31:13,692 - generation_logger_handler - INFO - Agregado el umbral 0.33 al valor 14.95, sumando el valor final de 15.28
+2024-08-07 07:31:13,692 - generation_logger_handler - INFO - Generado el valor 44.36 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:38:51,416 - generation_logger_handler - INFO - Agregado el umbral -0.28 al valor 14.95, sumando el valor final de 14.67
+2024-08-07 07:38:51,417 - generation_logger_handler - INFO - Generado el valor 35.65 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:39:47,528 - generation_logger_handler - INFO - Agregado el umbral 0.01 al valor 14.95, sumando el valor final de 14.96
+2024-08-07 07:39:47,528 - generation_logger_handler - INFO - Generado el valor 50.31 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:43:18,318 - generation_logger_handler - INFO - Agregado el umbral -0.39 al valor 14.95, sumando el valor final de 14.56
+2024-08-07 07:43:18,318 - generation_logger_handler - INFO - Generado el valor 48.09 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:53:38,539 - generation_logger_handler - INFO - Agregado el umbral -0.47 al valor 14.95, sumando el valor final de 14.48
+2024-08-07 07:53:38,539 - generation_logger_handler - INFO - Generado el valor 50.28 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:54:38,970 - generation_logger_handler - INFO - Agregado el umbral -0.62 al valor 14.95, sumando el valor final de 14.33
+2024-08-07 07:54:38,970 - generation_logger_handler - INFO - Generado el valor 41.24 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:59:42,853 - generation_logger_handler - INFO - Agregado el umbral -0.62 al valor 14.95, sumando el valor final de 14.33
+2024-08-07 07:59:42,853 - generation_logger_handler - INFO - Generado el valor 37.86 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 07:59:58,332 - generation_logger_handler - INFO - Agregado el umbral -0.0 al valor 14.95, sumando el valor final de 14.95
+2024-08-07 07:59:58,332 - generation_logger_handler - INFO - Generado el valor 45.36 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 08:00:55,276 - generation_logger_handler - INFO - Agregado el umbral 0.0 al valor 14.95, sumando el valor final de 14.95
+2024-08-07 08:00:55,277 - generation_logger_handler - INFO - Generado el valor 49.1 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 08:01:35,636 - generation_logger_handler - INFO - Agregado el umbral -0.04 al valor 14.95, sumando el valor final de 14.91
+2024-08-07 08:01:35,637 - generation_logger_handler - INFO - Generado el valor 40.87 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 08:03:47,585 - generation_logger_handler - INFO - Agregado el umbral -0.81 al valor 14.95, sumando el valor final de 14.14
+2024-08-07 08:03:47,585 - generation_logger_handler - INFO - Generado el valor 42.12 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 08:04:13,093 - generation_logger_handler - INFO - Agregado el umbral -0.76 al valor 14.95, sumando el valor final de 14.19
+2024-08-07 08:04:13,094 - generation_logger_handler - INFO - Generado el valor 46.26 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 08:04:24,293 - generation_logger_handler - INFO - Agregado el umbral 0.42 al valor 14.95, sumando el valor final de 15.37
+2024-08-07 08:04:24,294 - generation_logger_handler - INFO - Generado el valor 52.99 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:11:31,600 - generation_logger_handler - INFO - Agregado el umbral -0.14 al valor 14.95, sumando el valor final de 14.81
+2024-08-07 09:11:31,601 - generation_logger_handler - INFO - Generado el valor 41.16 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:12:20,458 - generation_logger_handler - INFO - Agregado el umbral -0.94 al valor 14.95, sumando el valor final de 14.01
+2024-08-07 09:12:20,459 - generation_logger_handler - INFO - Generado el valor 50.61 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:12:28,680 - generation_logger_handler - INFO - Agregado el umbral 0.67 al valor 14.95, sumando el valor final de 15.62
+2024-08-07 09:12:28,680 - generation_logger_handler - INFO - Generado el valor 42.69 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:13:35,944 - generation_logger_handler - INFO - Agregado el umbral -0.89 al valor 14.95, sumando el valor final de 14.06
+2024-08-07 09:13:35,945 - generation_logger_handler - INFO - Generado el valor 45.2 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:14:00,721 - generation_logger_handler - INFO - Agregado el umbral 0.44 al valor 14.95, sumando el valor final de 15.39
+2024-08-07 09:14:00,722 - generation_logger_handler - INFO - Generado el valor 43.63 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:15:38,177 - generation_logger_handler - INFO - Agregado el umbral 0.37 al valor 14.95, sumando el valor final de 15.32
+2024-08-07 09:15:38,177 - generation_logger_handler - INFO - Generado el valor 48.84 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 09:15:55,002 - generation_logger_handler - INFO - Agregado el umbral 0.35 al valor 14.95, sumando el valor final de 15.3
+2024-08-07 09:15:55,002 - generation_logger_handler - INFO - Generado el valor 43.45 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 10:05:23,124 - generation_logger_handler - INFO - Agregado el umbral -0.16 al valor 14.95, sumando el valor final de 14.79
+2024-08-07 10:05:23,124 - generation_logger_handler - INFO - Generado el valor 45.12 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 10:07:09,417 - generation_logger_handler - INFO - Agregado el umbral -0.9 al valor 14.95, sumando el valor final de 14.05
+2024-08-07 10:07:09,417 - generation_logger_handler - INFO - Generado el valor 47.89 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 10:07:30,956 - generation_logger_handler - INFO - Agregado el umbral 0.95 al valor 13.97, sumando el valor final de 14.92
+2024-08-07 10:07:30,957 - generation_logger_handler - INFO - Generado el valor 46.26 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 10:07:41,407 - generation_logger_handler - INFO - Agregado el umbral -0.91 al valor 13.97, sumando el valor final de 13.06
+2024-08-07 10:07:41,408 - generation_logger_handler - INFO - Generado el valor 52.67 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 10:07:46,739 - generation_logger_handler - INFO - Agregado el umbral -0.31 al valor 13.97, sumando el valor final de 13.66
+2024-08-07 10:07:46,740 - generation_logger_handler - INFO - Generado el valor 43.79 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0
+2024-08-07 10:07:59,120 - generation_logger_handler - INFO - Agregado el umbral -0.07 al valor 13.97, sumando el valor final de 13.9
+2024-08-07 10:07:59,120 - generation_logger_handler - INFO - Generado el valor 46.71 desde el mínimo 30.0 y el valor máximo 60.0, media 45.0 y desviación estándar 5.0

@@ -1,8 +1,8 @@
 from handlers.csv_handler import CSVHandler
 from handlers.datetime_handler import DatetimeHandler
 from handlers.pvlib_handler import PVlibHandler
-from handlers import generation_handler
 from handlers.toml_handler import TOMLHandler
+from handlers import generation_handler
 
 import logging
 from handlers.logger_handler import LoggerHandler
@@ -11,7 +11,7 @@ from handlers.logger_handler import LoggerHandler
 def main():
 
     # Invocación de handlers
-    datetime_handler = DatetimeHandler('2024-08-04 13:44:00')
+    datetime_handler = DatetimeHandler('2024-01-04 10:44:00')
     loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
     valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml', loggerHandler)
     config_tomlHandler = TOMLHandler('config.toml', loggerHandler)
@@ -42,9 +42,9 @@ def main():
 
     # LUX # TODO
     datos_solares = PVlibHandler(logger=True)
-    valor_lux = datos_solares.obtener_lux(datetime_handler, config_tomlHandler)
+    valor_lux = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
 
-    print(f"Lux: {valor_lux}")
+    print(f"Luz: {valor_lux}")
 
     # esto devuelve el dataframe de antes. Pero ahora tengo que hacer funciones para obtener los lux dependiendo de estos parámetros 
 
