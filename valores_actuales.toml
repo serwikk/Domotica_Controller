@@ -1,11 +1,12 @@
 [valores_magnitudes]
-temperatura = 23.85
-humedad = 47.7
+temperatura = 23.66
+humedad = 40.94
 lux = 413.86
 presencia = 0
 
 [estado_actuadores]
-persiana = 0.5
-luz = 1
-puerta = 0.1
-ventana = 0.5
+persiana = [ 0.0, 0.6,]
+luz = [ 1.0, 500.0,]
+puerta = [ 1.0, 0.4,]
+ventana = [ 1.0, 0.2,]
+climatizador = [ 1.0, 22.0,]

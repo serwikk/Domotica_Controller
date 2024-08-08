@@ -46,7 +46,7 @@ def main():
 
     print(f"Humedad: {valor_humedad}")
 
-    # LUX # TODO
+    # LUX
     datos_solares = PVlibHandler(logger=True)
     valor_lux = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
 

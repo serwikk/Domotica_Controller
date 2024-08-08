@@ -8,6 +8,7 @@ from dispositivos.actuadores.actuador_persiana import ActuadorPersiana
 from dispositivos.actuadores.actuador_ventana import ActuadorVentana
 from dispositivos.actuadores.actuador_luz import ActuadorLuz
 from dispositivos.actuadores.actuador_puerta import ActuadorPuerta
+from dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
 
 
 class Controlador():
@@ -54,5 +55,8 @@ class Controlador():
 
             if actuador == 'actuador_puerta':
                 actuadores[actuador] = ActuadorPuerta()
+
+            if actuador == 'actuador_climatizador':
+                actuadores[actuador] = ActuadorClimatizador()
 
         return actuadores
