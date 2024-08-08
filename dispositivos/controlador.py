@@ -4,6 +4,8 @@ from dispositivos.sensores.sensor_temperatura import SensorTemperatura
 from dispositivos.sensores.sensor_humedad import SensorHumedad
 from dispositivos.sensores.sensor_luz import SensorLuz
 
+from dispositivos.actuadores.actuador_persiana import ActuadorPersiana
+
 
 class Controlador():
 
@@ -11,7 +13,7 @@ class Controlador():
         self.espacio = espacio
         self.id_controlador = generar_id_aleatorio(f"contr-")
         self.sensores = self.inicializar_sensores(nombres_sensores)
-        #self.actuadores = self.inicializar_actuadores(nombres_actuadores)
+        self.actuadores = self.inicializar_actuadores(nombres_actuadores)
 
     def inicializar_sensores(self, nombres_sensores):
 
@@ -36,6 +38,9 @@ class Controlador():
 
         actuadores = {}
 
-        raise NotImplementedError
+        for actuador in nombres_actuadores:
+
+            if actuador == 'actuador_persiana':
+                actuadores[actuador] = ActuadorPersiana()
 
         return actuadores
