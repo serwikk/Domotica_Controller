@@ -13,7 +13,7 @@ from dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
 
 class Controlador():
 
-    def __init__(self, espacio, nombres_sensores= [], nombres_actuadores = []):
+    def __init__(self, espacio, nombres_sensores = [], nombres_actuadores = []):
         self.espacio = espacio
         self.id_controlador = generar_id_aleatorio(f"contr-")
         self.sensores = self.inicializar_sensores(nombres_sensores)

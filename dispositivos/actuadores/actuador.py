@@ -9,7 +9,6 @@ class Actuador:
         self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='valores_actuales.toml')
         self.tipo_actuador = tipo_actuador
         self.en_funcionamiento, self.estado = self.leer_estado()
-        print(type(self.estado))
 
     def leer_estado(self):
         return self.valores_actuales_tomlHandler.obtener_valor('estado_actuadores', self.tipo_actuador)
