@@ -11,8 +11,8 @@ class Actuador:
         self.en_funcionamiento, self.estado = self.leer_estado()
 
     def leer_estado(self):
-        return self.valores_actuales_tomlHandler.obtener_valor('estado_actuadores', self.tipo_actuador)
+        return self.valores_actuales_tomlHandler.obtener_valor('actuadores', self.tipo_actuador)
 
     def cambiar_valor(self, valor):
         self.estado = valor
-        self.valores_actuales_tomlHandler.establecer_valor('estado_actuadores', self.tipo_actuador, valor)
+        self.valores_actuales_tomlHandler.establecer_valor('actuadores', self.tipo_actuador, valor)

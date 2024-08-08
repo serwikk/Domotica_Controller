@@ -21,3 +21,18 @@ class LoggerHandler:
         
         # Agregar el manejador al logger
         self.logger.addHandler(file_handler)
+
+
+class DebugConsoleLoggerHandler:
+
+    def __init__(self):
+        self.logger = logging.getLogger('DebugConsoleLoggerHandler')
+        self.logger.setLevel(logging.DEBUG)
+
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.DEBUG)
+
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        console_handler.setFormatter(formatter)
+        
+        self.logger.addHandler(console_handler)
