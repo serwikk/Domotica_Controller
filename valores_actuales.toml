@@ -5,7 +5,7 @@ lux = 413.86
 presencia = 0
 
 [estado_actuadores]
-persiana = 0.3
-luz = 0
-puerta = 0.7
-ventana = 0.8
+persiana = 0.5
+luz = 1
+puerta = 0.1
+ventana = 0.5

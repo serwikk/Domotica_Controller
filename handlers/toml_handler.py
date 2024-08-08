@@ -6,7 +6,6 @@ class TOMLHandler:
 
     def __init__(self, ruta_archivo, loggerHandler=None):
         self.ruta_archivo = ruta_archivo
-        self.valores = self.cargar_toml()
         if loggerHandler:
             self.loggerHandler = LoggerHandler() # TODO
         else:
@@ -22,21 +21,22 @@ class TOMLHandler:
             return toml.load(archivo)
     
 
-    def guardar_toml(self):
+    def guardar_toml(self, valores):
         """
         Guarda los valores actuales en el archivo TOML
         """
 
         with open(self.ruta_archivo, 'w') as archivo:
-            toml.dump(self.valores, archivo)
+            toml.dump(valores, archivo)
 
 
     def obtener_valores_seccion(self, seccion) -> dict:
         """
         Devuelve todos los valores de una sección
         """
+        valores = self.cargar_toml()
 
-        return self.valores[seccion]     
+        return valores[seccion]     
     
 
     def obtener_valor(self, seccion, clave):
@@ -44,8 +44,10 @@ class TOMLHandler:
         Devuelve el valor de la sección y clave especificadas 
         """
 
+        valores = self.cargar_toml()
+
         try:
-            return self.valores[seccion][clave]
+            return valores[seccion][clave]
         
         except KeyError:
             msg = 'Sección o clave no encontrada'
@@ -59,14 +61,16 @@ class TOMLHandler:
         Establece un valor específico en una sección y clave del archivo TOML
         """
 
-        if seccion not in self.valores:
-            self.valores[seccion] = {}
+        valores = self.cargar_toml()
+
+        if seccion not in valores:
+            valores[seccion] = {}
 
             if self.loggerHandler:
                 self.loggerHandler.logger.info(f'Sección "{seccion}" creada')
         
-        self.valores[seccion][clave] = valor
-        self.guardar_toml()
+        valores[seccion][clave] = valor
+        self.guardar_toml(valores)
         
         if self.loggerHandler:
             self.loggerHandler.logger.info(f'Clave "{clave}" actualizada en la sección "{seccion}" con el valor: {valor} ({type(valor)})')

@@ -5,6 +5,9 @@ from dispositivos.sensores.sensor_humedad import SensorHumedad
 from dispositivos.sensores.sensor_luz import SensorLuz
 
 from dispositivos.actuadores.actuador_persiana import ActuadorPersiana
+from dispositivos.actuadores.actuador_ventana import ActuadorVentana
+from dispositivos.actuadores.actuador_luz import ActuadorLuz
+from dispositivos.actuadores.actuador_puerta import ActuadorPuerta
 
 
 class Controlador():
@@ -42,5 +45,14 @@ class Controlador():
 
             if actuador == 'actuador_persiana':
                 actuadores[actuador] = ActuadorPersiana()
+
+            if actuador == 'actuador_ventana':
+                actuadores[actuador] = ActuadorVentana()
+
+            if actuador == 'actuador_luz':
+                actuadores[actuador] = ActuadorLuz()
+
+            if actuador == 'actuador_puerta':
+                actuadores[actuador] = ActuadorPuerta()
 
         return actuadores
