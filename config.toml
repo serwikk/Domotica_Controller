@@ -19,3 +19,12 @@ area = 120
 [ventanas.ventana2]
 orientacion = 90
 area = 80
+
+[config_controlador]
+
+[config_controlador.climatizador]
+temperatura_min = 20
+temperatura_max = 30
+
+[config_controlador.ventana]
+continuar = 1
