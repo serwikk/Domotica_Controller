@@ -22,7 +22,7 @@ area = 80
 
 [config_controlador]
 
-[config_controlador.climatizador]
+[config_controlador.climatizador]   
 temperatura_min = 20
 temperatura_max = 30
 

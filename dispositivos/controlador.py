@@ -60,3 +60,6 @@ class Controlador():
                 actuadores[actuador] = ActuadorClimatizador()
 
         return actuadores
+
+    def informacion_valores_actuales_perifericos(self):
+        raise NotImplementedError()
