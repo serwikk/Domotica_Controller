@@ -7,6 +7,7 @@ class Actuador:
     def __init__(self, id, tipo_actuador):
         self.id = id
         self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='valores_actuales.toml')
+        self.config_tomlHandler = TOMLHandler(ruta_archivo='config.toml')
         self.tipo_actuador = tipo_actuador
         self.en_funcionamiento = self.leer_valores()['en_funcionamiento']
         self.estado = self.leer_valores()['estado']
@@ -17,6 +18,8 @@ class Actuador:
     
     def encender(self):
         
+        print(f"Encendiendo {self.tipo_actuador}...")
+        
         encendido = True
         self.en_funcionamiento = encendido
 
@@ -24,6 +27,8 @@ class Actuador:
 
 
     def apagar(self):
+                
+        print(f"Apagando {self.tipo_actuador}...")
 
         encendido = False
         self.en_funcionamiento = encendido

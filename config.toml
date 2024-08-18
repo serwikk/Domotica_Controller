@@ -27,3 +27,7 @@ temperatura_max = 30
 
 [config_controlador.ventana]
 continuar = 1
+
+[config_controlador.humidificador]
+humedad_min = 40
+humedad_max = 60

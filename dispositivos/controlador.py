@@ -9,6 +9,7 @@ from dispositivos.actuadores.actuador_ventana import ActuadorVentana
 from dispositivos.actuadores.actuador_luz import ActuadorLuz
 from dispositivos.actuadores.actuador_puerta import ActuadorPuerta
 from dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
+from dispositivos.actuadores.actuador_humidificador import ActuadorHumidificador
 
 
 class Controlador():
@@ -59,6 +60,9 @@ class Controlador():
             if actuador == 'actuador_climatizador':
                 actuadores[actuador] = ActuadorClimatizador()
 
+            if actuador == 'actuador_humidificador':
+                actuadores[actuador] = ActuadorHumidificador()
+
         return actuadores
 
     def obtener_datos_actuales_perifericos(self):
@@ -77,3 +81,71 @@ class Controlador():
 
         
         return datos_actuales_perifericos
+    
+    @staticmethod
+    def gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, climatizador, humidificador):
+        
+        print(f"Temperatura ambiente: {temperatura_ambiente}ºC")
+        print(f"Temperatura objetivo: {temperatura_objetivo_climatizador}ºC")
+
+        if temperatura_ambiente < temperatura_objetivo_climatizador and abs(temperatura_ambiente - temperatura_objetivo_climatizador) > 0.2:
+            print(f"Temperatura ambiente ({temperatura_ambiente}ºC) menor que temperatura objetivo ({temperatura_objetivo_climatizador}ºC). Subiendo temperatura...")
+            if not climatizador.en_funcionamiento:
+                climatizador.encender()
+                climatizador.subir_temperatura_ambiente()
+                humidificador.bajar_humedad_ambiente()
+            else:
+                climatizador.subir_temperatura_ambiente()
+                humidificador.bajar_humedad_ambiente()
+
+        elif temperatura_ambiente > temperatura_objetivo_climatizador and abs(temperatura_ambiente - temperatura_objetivo_climatizador) > 0.2:
+            print(f"Temperatura ambiente ({temperatura_ambiente}ºC) mayor que temperatura objetivo ({temperatura_objetivo_climatizador}ºC). Bajando temperatura...")
+            if not climatizador.en_funcionamiento:
+                climatizador.encender()
+                climatizador.bajar_temperatura_ambiente()
+                humidificador.bajar_humedad_ambiente()
+            else:
+                climatizador.bajar_temperatura_ambiente()
+                humidificador.bajar_humedad_ambiente()
+
+        else:
+            if climatizador.en_funcionamiento:
+                climatizador.apagar()
+
+
+    @staticmethod
+    def gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, humidificador):
+        
+        
+        print(f"Humedad_ambiente: {humedad_ambiente}%")
+        print(f"Humedad objetivo: {humedad_objetivo_humidificador}%")
+
+        config_humidificador = humidificador.config_tomlHandler.obtener_valores_seccion('config_controlador')['humidificador']
+        humedad_min, humedad_max = config_humidificador['humedad_min'], config_humidificador['humedad_max']
+
+        if not humidificador.en_funcionamiento:
+
+            if humedad_ambiente < humedad_min:
+                humidificador.encender()
+                humidificador.subir_humedad_ambiente()
+                print(f"Humedad ambiente ({humedad_ambiente}%) menor que humedad mínima ({humedad_min}%). Subiendo humedad...")
+            
+            elif humedad_ambiente > humedad_max:
+                humidificador.encender()
+                humidificador.bajar_humedad_ambiente()
+                print(f"Humedad ambiente ({humedad_ambiente}%) mayor que humedad máxima ({humedad_max}%). Bajando humedad...")
+
+
+        elif humidificador.en_funcionamiento:
+            
+            if humedad_ambiente < humedad_objetivo_humidificador - 1:
+                humidificador.subir_humedad_ambiente()
+                print(f"Humedad ambiente ({humedad_ambiente}%) menor que humedad objetivo - 1 ({humedad_objetivo_humidificador - 1}%). Subiendo humedad...")
+            
+            elif humedad_ambiente >= humedad_objetivo_humidificador - 1 and humedad_ambiente <= humedad_objetivo_humidificador + 1:
+                print(f"Humedad ambiente ({humedad_ambiente}%) cercana a la humedad objetivo ± 1 ({humedad_objetivo_humidificador - 1} - {humedad_objetivo_humidificador + 1}%).")
+                humidificador.apagar()
+            
+            elif humedad_ambiente > humedad_objetivo_humidificador + 1:
+                humidificador.bajar_humedad_ambiente()
+                print(f"Humedad ambiente ({humedad_ambiente}%) mayor que humedad objetivo + 1 ({humedad_objetivo_humidificador + 1}%). Bajando humedad...")
