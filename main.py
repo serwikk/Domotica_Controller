@@ -3,7 +3,6 @@ from dispositivos.controlador import Controlador
 from handlers.toml_handler import TOMLHandler
 from handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
 import logging
-import math
 
 
 def main():
@@ -29,8 +28,6 @@ def main():
     luz = controlador.actuadores['actuador_luz']
 
     climatizador = controlador.actuadores['actuador_climatizador']
-
-    luz.cambiar_estado(0)
 
     datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
 
