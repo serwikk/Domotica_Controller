@@ -14,10 +14,6 @@ class Actuador:
     def leer_valores(self):
         return self.valores_actuales_tomlHandler.obtener_valor('actuadores', self.tipo_actuador)
 
-    def cambiar_valor(self, valor):
-        self.en_funcionamiento = valor[0]
-        self.estado = valor
-
     
     def encender(self):
         
@@ -33,5 +29,11 @@ class Actuador:
         self.en_funcionamiento = encendido
 
         self.valores_actuales_tomlHandler.establecer_valor(f'actuadores.{self.tipo_actuador}', 'en_funcionamiento', encendido)
+
+        
+
+    def cambiar_estado(self, valor):
+        self.estado = valor
+        self.valores_actuales_tomlHandler.establecer_valor(f'actuadores.{self.tipo_actuador}', 'estado', valor)
 
         

@@ -30,7 +30,7 @@ def main():
 
     climatizador = controlador.actuadores['actuador_climatizador']
 
-    luz.apagar()
+    luz.cambiar_estado(0)
 
     datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
 

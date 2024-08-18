@@ -10,7 +10,7 @@ estado = 0.6
 
 [actuadores.luz]
 en_funcionamiento = false
-estado = 500.0
+estado = 0
 
 [actuadores.puerta]
 en_funcionamiento = true
