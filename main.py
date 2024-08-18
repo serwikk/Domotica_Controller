@@ -21,19 +21,16 @@ def main():
     # debug_logger_handler.logger.debug(vars(controlador))
 
     ventana = controlador.actuadores['actuador_ventana']
-    ventana.cambiar_valor([1.0, 0.2])
 
     puerta = controlador.actuadores['actuador_puerta']
-    puerta.cambiar_valor([1.0, 0.4])
 
     persiana = controlador.actuadores['actuador_persiana']
-    persiana.cambiar_valor([0.0, 0.6])
 
     luz = controlador.actuadores['actuador_luz']
-    luz.cambiar_valor([1, 500.0])
 
     climatizador = controlador.actuadores['actuador_climatizador']
-    climatizador.cambiar_valor([1.0, 22.0])
+
+    luz.apagar()
 
     datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
 
@@ -41,6 +38,8 @@ def main():
 
     temperatura_ambiente = datos_actuales_perifericos['sensor_temperatura']
     # temperatura_objetivo_climatizador
+
+    return
 
     if abs(temperatura_ambiente - datos_actuales_perifericos['actuador_climatizador'][1]) > 1:
         # print(f"diferencia: {}")

@@ -72,7 +72,7 @@ class Controlador():
 
         for actuador in self.actuadores:
 
-            datos_actuador = self.actuadores[actuador].leer_estado()
+            datos_actuador = self.actuadores[actuador].leer_valores()
             datos_actuales_perifericos[actuador] = datos_actuador
 
         

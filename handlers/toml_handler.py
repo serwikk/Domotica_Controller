@@ -63,13 +63,22 @@ class TOMLHandler:
 
         valores = self.cargar_toml()
 
-        if seccion not in valores:
-            valores[seccion] = {}
+        secciones = seccion.split(".")
 
-            if self.loggerHandler:
-                self.loggerHandler.logger.info(f'Sección "{seccion}" creada')
-        
-        valores[seccion][clave] = valor
+        sub_valores = valores
+
+        for sub_seccion in secciones:
+            if sub_seccion not in sub_valores:
+                sub_valores[sub_seccion] = {}
+                if self.loggerHandler:
+                    self.loggerHandler.logger.info(f'Sub-sección "{sub_seccion}" creada')
+
+            sub_valores = sub_valores[sub_seccion]
+
+        # Establecer el valor en la clave especificada dentro de la última sub-sección
+        sub_valores[clave] = valor
+
+        # Guardar los valores actualizados en el archivo TOML
         self.guardar_toml(valores)
         
         if self.loggerHandler:
