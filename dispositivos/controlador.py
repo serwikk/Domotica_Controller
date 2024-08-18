@@ -61,5 +61,19 @@ class Controlador():
 
         return actuadores
 
-    def informacion_valores_actuales_perifericos(self):
-        raise NotImplementedError()
+    def obtener_datos_actuales_perifericos(self):
+
+        datos_actuales_perifericos = {}
+
+        for sensor in self.sensores:
+
+            datos_sensor = self.sensores[sensor].obtener_valor()
+            datos_actuales_perifericos[sensor] = datos_sensor
+
+        for actuador in self.actuadores:
+
+            datos_actuador = self.actuadores[actuador].leer_estado()
+            datos_actuales_perifericos[actuador] = datos_actuador
+
+        
+        return datos_actuales_perifericos

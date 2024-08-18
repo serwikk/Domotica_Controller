@@ -9,7 +9,6 @@ lux_artificial = 500
 lux_noche_farolas = 5
 grados_lux_directa = 60
 
-
 [ventanas]
 
 [ventanas.ventana1]

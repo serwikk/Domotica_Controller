@@ -9,3 +9,22 @@ class ActuadorClimatizador(Actuador):
         
         super().__init__( id= generar_id_aleatorio("clim-"), tipo_actuador='climatizador')
 
+
+    def encender_climatizador(self):
+        
+        encendido = 1.0
+        self.en_funcionamiento = encendido
+        temp = self.estado[1]
+
+        self.cambiar_valor([encendido, temp])
+
+
+    def apagar_climatizador(self):
+        
+        apagado = 0.0
+        self.en_funcionamiento = apagado
+        temp = self.estado[1]
+
+        self.cambiar_valor([apagado, temp])
+
+

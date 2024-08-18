@@ -3,6 +3,7 @@ from dispositivos.controlador import Controlador
 from handlers.toml_handler import TOMLHandler
 from handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
 import logging
+import math
 
 
 def main():
@@ -17,7 +18,7 @@ def main():
                     nombres_sensores=['sensor_temperatura', 'sensor_humedad', 'sensor_luz'],
                     nombres_actuadores=['actuador_persiana', 'actuador_ventana', 'actuador_luz', 'actuador_puerta', 'actuador_climatizador'])
 
-    debug_logger_handler.logger.debug(vars(controlador))
+    # debug_logger_handler.logger.debug(vars(controlador))
 
     ventana = controlador.actuadores['actuador_ventana']
     ventana.cambiar_valor([1.0, 0.2])
@@ -34,8 +35,22 @@ def main():
     climatizador = controlador.actuadores['actuador_climatizador']
     climatizador.cambiar_valor([1.0, 22.0])
 
-    for actuador in [ventana, puerta, persiana, luz, climatizador]:
-        debug_logger_handler.logger.debug(actuador.leer_estado())
+    datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
+
+    print(datos_actuales_perifericos)
+
+    temperatura_ambiente = datos_actuales_perifericos['sensor_temperatura']
+    # temperatura_objetivo_climatizador
+
+    if abs(temperatura_ambiente - datos_actuales_perifericos['actuador_climatizador'][1]) > 1:
+        # print(f"diferencia: {}")
+        pass
+
+    if climatizador.en_funcionamiento == 1.0:
+        print("El climatizador está encendido")
+
+    if climatizador.en_funcionamiento == 0.0:
+        print("El climatizador está apagado")
 
 
 if __name__ == "__main__":
