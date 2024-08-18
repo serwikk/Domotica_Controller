@@ -11,9 +11,15 @@ class ActuadorLuz(Actuador):
 
     
     def encender(self):
-        super().encender()
-        super().cambiar_estado(500)
 
-    def apagar(self):
+        lux_artificial = 500
+        super().encender()
+        super().cambiar_estado(lux_artificial)
+
+        self.valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'lux', lux_artificial)
+
+    def apagar(self, luz_ambiente):
         super().apagar()
         super().cambiar_estado(0)
+
+        self.valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'lux', luz_ambiente)

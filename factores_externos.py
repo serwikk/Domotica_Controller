@@ -17,7 +17,7 @@ def main():
     """
 
     # Invocación de handlers
-    datetime_handler = DatetimeHandler('2024-04-04 19:44:00')
+    datetime_handler = DatetimeHandler()
     loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
     valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
     config_tomlHandler = TOMLHandler('config.toml')
@@ -51,8 +51,6 @@ def main():
     valor_lux = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
 
     print(f"Luz: {valor_lux}")
-
-    # esto devuelve el dataframe de antes. Pero ahora tengo que hacer funciones para obtener los lux dependiendo de estos parámetros 
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad)

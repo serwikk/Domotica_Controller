@@ -3,6 +3,7 @@ from handlers.generation_handler import generar_id_aleatorio
 from dispositivos.sensores.sensor_temperatura import SensorTemperatura
 from dispositivos.sensores.sensor_humedad import SensorHumedad
 from dispositivos.sensores.sensor_luz import SensorLuz
+from dispositivos.sensores.sensor_presencia import SensorPresencia
 
 from dispositivos.actuadores.actuador_persiana import ActuadorPersiana
 from dispositivos.actuadores.actuador_ventana import ActuadorVentana
@@ -34,6 +35,9 @@ class Controlador():
 
             if sensor == 'sensor_luz':
                 sensores[sensor] = SensorLuz()
+
+            if sensor == 'sensor_presencia':
+                sensores[sensor] = SensorPresencia()
 
 
         return sensores
@@ -85,6 +89,7 @@ class Controlador():
     @staticmethod
     def gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, climatizador, humidificador):
         
+        print("---------------------------------------------------------------------------------")
         print(f"Temperatura ambiente: {temperatura_ambiente}ºC")
         print(f"Temperatura objetivo: {temperatura_objetivo_climatizador}ºC")
 
@@ -116,7 +121,7 @@ class Controlador():
     @staticmethod
     def gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, humidificador):
         
-        
+        print("---------------------------------------------------------------------------------")
         print(f"Humedad_ambiente: {humedad_ambiente}%")
         print(f"Humedad objetivo: {humedad_objetivo_humidificador}%")
 
@@ -149,3 +154,26 @@ class Controlador():
             elif humedad_ambiente > humedad_objetivo_humidificador + 1:
                 humidificador.bajar_humedad_ambiente()
                 print(f"Humedad ambiente ({humedad_ambiente}%) mayor que humedad objetivo + 1 ({humedad_objetivo_humidificador + 1}%). Bajando humedad...")
+            
+    @staticmethod
+    def gestionar_luz(luz_ambiente, presencia, actuador_luz):
+        
+        print("---------------------------------------------------------------------------------")
+        print(f"Luz ambiente {luz_ambiente}")
+        print(f"Presencia: {presencia}")
+
+        if not actuador_luz.en_funcionamiento:
+
+            if presencia:
+                actuador_luz.encender()
+
+            else:
+                actuador_luz.apagar(luz_ambiente)
+
+        elif actuador_luz.en_funcionamiento:
+
+            if presencia and luz_ambiente < 10:
+                actuador_luz.encender()
+
+            else:
+                actuador_luz.apagar(luz_ambiente)

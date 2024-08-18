@@ -70,11 +70,9 @@ class PVlibHandler:
 
         # Obtenemos la lux máxima definida en el apartado 'lux' de 'config.toml'
         lux_max = config_tomlHandler.obtener_valor('lux', 'lux_max_cenit')
-        lux_artificial = config_tomlHandler.obtener_valor('lux', 'lux_artificial')
         lux_noche_farolas = config_tomlHandler.obtener_valor('lux', 'lux_noche_farolas')
 
-        indice_persiana = valores_actuales_tomlHandler.obtener_valor('estado_actuadores', 'persiana')
-        luz_artificial = valores_actuales_tomlHandler.obtener_valor('estado_actuadores', 'luz')
+        indice_persiana = valores_actuales_tomlHandler.obtener_valores_seccion('actuadores')['persiana']['estado']
 
         # logging.info(f"Elevación: {elevacion:.02f}º, Azimut: {azimut:.02f}º")
 
@@ -101,10 +99,6 @@ class PVlibHandler:
         lux_final_habitaculo = max(lux_ventanas.values())
         
         if lux_final_habitaculo <= 0:
-            if luz_artificial:
-                lux_final_habitaculo = lux_artificial
-
-            else:
-                lux_final_habitaculo = gh.generar_valor_polinomico(lux_noche_farolas, indice_persiana)
+           lux_final_habitaculo = gh.generar_valor_polinomico(lux_noche_farolas, indice_persiana)
 
         return round(lux_final_habitaculo, 2)

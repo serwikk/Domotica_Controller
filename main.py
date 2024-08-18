@@ -14,22 +14,22 @@ def main():
     habitaculo = config_tomlhandler.obtener_valor('config', 'habitaculo')
 
     controlador = Controlador(habitaculo, 
-                    nombres_sensores=['sensor_temperatura', 'sensor_humedad', 'sensor_luz'],
+                    nombres_sensores=['sensor_temperatura', 'sensor_humedad', 'sensor_luz', 'sensor_presencia'],
                     nombres_actuadores=['actuador_persiana', 'actuador_ventana', 'actuador_luz', 'actuador_puerta', 'actuador_climatizador', 'actuador_humidificador'])
 
     # debug_logger_handler.logger.debug(vars(controlador))
 
-    ventana = controlador.actuadores['actuador_ventana']
+    actuador_ventana = controlador.actuadores['actuador_ventana']
 
-    puerta = controlador.actuadores['actuador_puerta']
+    actuador_puerta = controlador.actuadores['actuador_puerta']
 
-    persiana = controlador.actuadores['actuador_persiana']
+    actuador_persiana = controlador.actuadores['actuador_persiana']
 
-    luz = controlador.actuadores['actuador_luz']
+    actuador_luz = controlador.actuadores['actuador_luz']
 
-    climatizador = controlador.actuadores['actuador_climatizador']
+    actuador_climatizador = controlador.actuadores['actuador_climatizador']
 
-    humidificador = controlador.actuadores['actuador_humidificador']
+    actuador_humidificador = controlador.actuadores['actuador_humidificador']
 
     datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
 
@@ -38,12 +38,19 @@ def main():
     temperatura_ambiente = datos_actuales_perifericos['sensor_temperatura']
     temperatura_objetivo_climatizador = datos_actuales_perifericos['actuador_climatizador']['estado']
 
-    Controlador.gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, climatizador, humidificador)
+    Controlador.gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, actuador_climatizador, actuador_humidificador)
 
     humedad_ambiente = datos_actuales_perifericos['sensor_humedad']
     humedad_objetivo_humidificador = datos_actuales_perifericos['actuador_humidificador']['estado']
 
-    Controlador.gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, humidificador)
+    Controlador.gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, actuador_humidificador)
+
+    luz_ambiente = datos_actuales_perifericos['sensor_luz']
+    presencia = datos_actuales_perifericos['sensor_presencia']
+
+    Controlador.gestionar_luz(luz_ambiente, presencia, actuador_luz)
+
+    # NOTA: cuando se guarda el valor de la luz artificial, luego si la presencia se quita, se queda guardado eso, es decir, se pierde la referencia del valor de los lux
 
 if __name__ == "__main__":
     main()
