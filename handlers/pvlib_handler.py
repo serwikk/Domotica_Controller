@@ -97,8 +97,14 @@ class PVlibHandler:
                 lux_ventanas[ventana]  = lux_ambiente / 2 # Divido entre dos porque lo normal es que si no entra la luz directa, sea menor el numero de lux
 
         lux_final_habitaculo = max(lux_ventanas.values())
+
+        print(indice_persiana)
         
         if lux_final_habitaculo <= 0:
            lux_final_habitaculo = gh.generar_valor_polinomico(lux_noche_farolas, indice_persiana)
+           
+        else:
+           lux_final_habitaculo = gh.generar_valor_polinomico(lux_final_habitaculo, indice_persiana)
+            
 
         return round(lux_final_habitaculo, 2)
