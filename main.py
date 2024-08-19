@@ -33,7 +33,7 @@ def main():
 
     datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
 
-    print(datos_actuales_perifericos)
+    # print(datos_actuales_perifericos)
 
     temperatura_ambiente = datos_actuales_perifericos['sensor_temperatura']
     temperatura_objetivo_climatizador = datos_actuales_perifericos['actuador_climatizador']['estado']
@@ -45,12 +45,10 @@ def main():
 
     Controlador.gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, actuador_humidificador)
 
-    luz_ambiente = datos_actuales_perifericos['sensor_luz']
+    luz_resultante = datos_actuales_perifericos['sensor_luz']
     presencia = datos_actuales_perifericos['sensor_presencia']
 
-    Controlador.gestionar_luz(luz_ambiente, presencia, actuador_luz)
-
-    # NOTA: cuando se guarda el valor de la luz artificial, luego si la presencia se quita, se queda guardado eso, es decir, se pierde la referencia del valor de los lux
+    Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
 
 if __name__ == "__main__":
     main()

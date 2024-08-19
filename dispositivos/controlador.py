@@ -1,4 +1,5 @@
 from handlers.generation_handler import generar_id_aleatorio
+from handlers.toml_handler import TOMLHandler
 
 from dispositivos.sensores.sensor_temperatura import SensorTemperatura
 from dispositivos.sensores.sensor_humedad import SensorHumedad
@@ -156,24 +157,18 @@ class Controlador():
                 print(f"Humedad ambiente ({humedad_ambiente}%) mayor que humedad objetivo + 1 ({humedad_objetivo_humidificador + 1}%). Bajando humedad...")
             
     @staticmethod
-    def gestionar_luz(luz_ambiente, presencia, actuador_luz):
+    def gestionar_luz(luz_resultante, presencia, actuador_luz):
+
+        valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
+        luz_ambiente = valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', 'luz_ambiente')
         
         print("---------------------------------------------------------------------------------")
-        print(f"Luz ambiente {luz_ambiente}")
+        print(f"Luz ambiente: {luz_ambiente}")
+        print(f"Luz resultante: {luz_resultante}")
         print(f"Presencia: {presencia}")
 
-        if not actuador_luz.en_funcionamiento:
+        if presencia and luz_ambiente < 10:
+            actuador_luz.encender()
 
-            if presencia:
-                actuador_luz.encender()
-
-            else:
-                actuador_luz.apagar(luz_ambiente)
-
-        elif actuador_luz.en_funcionamiento:
-
-            if presencia and luz_ambiente < 10:
-                actuador_luz.encender()
-
-            else:
-                actuador_luz.apagar(luz_ambiente)
+        else:
+            actuador_luz.apagar(luz_ambiente)
