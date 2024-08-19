@@ -54,7 +54,7 @@ def main():
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad)
-    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'lux', valor_lux)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux)
 
 
 if __name__=="__main__":

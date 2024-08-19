@@ -1,7 +1,8 @@
 [valores_magnitudes]
 temperatura = 23.55
 humedad = 46.67
-lux = 5
+luz_ambiente = 5
+luz_resultante = 5
 presencia = false
 
 [actuadores.persiana]
