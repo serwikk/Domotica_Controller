@@ -8,3 +8,8 @@ class ActuadorPersiana(Actuador):
     def __init__(self):
         
         super().__init__( id= generar_id_aleatorio("pers-"), tipo_actuador='persiana')
+
+
+
+    def bajar_persiana(self):
+        raise NotImplementedError()
