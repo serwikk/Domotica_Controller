@@ -8,7 +8,7 @@ import argparse
 
 def main():
 
-    parser = argparse.ArgumentParser(description="Script para bajar la persiana con el valor especificado.")
+    parser = argparse.ArgumentParser(description="Script para subir la persiana con el valor especificado.")
 
     parser.add_argument('--estado', '-e', type=float, help="Establece el valor de la. Valor entre 0 y 1, siendo 0 cerrado totalmente y 1 abierta totalmente")
 
@@ -16,7 +16,7 @@ def main():
     
     actuador_persiana = ActuadorPersiana()
 
-    actuador_persiana.bajar_persiana(args.estado)
+    actuador_persiana.subir_persiana(args.estado)
 
 
 

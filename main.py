@@ -50,5 +50,7 @@ def main():
 
     Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
 
+
+
 if __name__ == "__main__":
     main()

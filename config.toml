@@ -31,3 +31,6 @@ continuar = 1
 [config_controlador.humidificador]
 humedad_min = 40
 humedad_max = 60
+
+[config_controlador.persiana]
+velocidad = 1
