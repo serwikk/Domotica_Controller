@@ -17,8 +17,13 @@ class Actuador:
 
     
     def encender(self):
-        
-        print(f"Encendiendo {self.tipo_actuador}...")
+
+        if self.en_funcionamiento:
+            print(f"{(self.tipo_actuador).title()} ya se encuentra encendido/a")
+
+        else:
+
+            print(f"Encendiendo {self.tipo_actuador}...")
         
         encendido = True
         self.en_funcionamiento = encendido
@@ -27,8 +32,12 @@ class Actuador:
 
 
     def apagar(self):
-                
-        print(f"Apagando {self.tipo_actuador}...")
+
+        if not self.en_funcionamiento:
+            print(f"{(self.tipo_actuador).title()} ya se encuentra apagado/a")
+        
+        else:       
+            print(f"Apagando {self.tipo_actuador}...")
 
         encendido = False
         self.en_funcionamiento = encendido
