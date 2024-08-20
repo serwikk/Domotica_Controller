@@ -1,6 +1,6 @@
 [valores_magnitudes]
-temperatura = 22.13
-humedad = 45.64
+temperatura = 29.91
+humedad = 45.82
 luz_ambiente = 2.89
 luz_resultante = 2.89
 presencia = false
@@ -22,7 +22,7 @@ en_funcionamiento = false
 estado = 0.2
 
 [actuadores.climatizador]
-en_funcionamiento = false
+en_funcionamiento = true
 estado = 22.0
 
 [actuadores.humidificador]
