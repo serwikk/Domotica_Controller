@@ -10,7 +10,7 @@ def main():
 
     parser = argparse.ArgumentParser(description="Script para subir la persiana con el valor especificado.")
 
-    parser.add_argument('--estado', '-e', type=float, help="Establece el valor de la. Valor entre 0 y 1, siendo 0 cerrado totalmente y 1 abierta totalmente")
+    parser.add_argument('--estado', '-e', type=float, help="Establece el valor de la persiana. Valor entre 0 y 1, siendo 0 cerrado totalmente y 1 abierta totalmente")
 
     args = parser.parse_args()
     
@@ -23,5 +23,4 @@ def main():
 
 
 if __name__ == "__main__":
-    pass
     main()
