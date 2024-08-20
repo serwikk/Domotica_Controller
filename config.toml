@@ -20,6 +20,7 @@ orientacion = 90
 area = 80
 
 [config_controlador]
+modo = "auto"
 
 [config_controlador.climatizador]   
 temperatura_min = 20
