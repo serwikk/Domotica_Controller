@@ -28,6 +28,7 @@ class ActuadorPersiana(Actuador):
 
         if estado_objetivo > estado_persiana:
             self.cambiar_estado(estado_objetivo)
+            print(f"Subiendo persiana...\nNuevo estado: {estado_objetivo}")
         else:
             print(f"No es posible subir la persiana a un estado inferior al actual ({estado_persiana})")
 
@@ -50,5 +51,6 @@ class ActuadorPersiana(Actuador):
 
         if estado_objetivo < estado_persiana:
             self.cambiar_estado(estado_objetivo)
+            print(f"Bajando persiana...\nNuevo estado: {estado_objetivo}")
         else:
             print(f"No es posible bajar la persiana a un estado inferior al actual ({estado_persiana})")
