@@ -53,10 +53,11 @@ def main():
     print(f"Luz: {valor_lux}")
 
     valor_temperatura_final = generation_handler.temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_temperatura)
+    valor_humedad_final = generation_handler.humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_humedad)
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura_final)
-    # valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad)
-    # valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad_final)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux)
 
 
 if __name__=="__main__":

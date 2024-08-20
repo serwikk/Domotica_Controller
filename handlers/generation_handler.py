@@ -78,4 +78,32 @@ def temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler
             return round(temperatura_ambiente, 2)
 
         else:
-            return round(temperatura_externa)
+            return round(temperatura_externa, 2)
+        
+
+def humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, humedad_externa):
+
+    aislamiento_termico = config_tomlHandler.obtener_valor('config', 'aislamiento_termico')
+
+    factor_inercia = round(1 - aislamiento_termico, 2)
+
+    humedad_ambiente = valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', 'humedad')
+
+    humidificador_en_funcionamiento = valores_actuales_tomlHandler.obtener_valor('actuadores', 'humidificador')['en_funcionamiento']
+
+    if humidificador_en_funcionamiento:
+        return humedad_ambiente
+
+    else:
+        diferencia = round(abs(humedad_externa - humedad_ambiente), 2)
+
+        ajuste = diferencia * factor_inercia
+
+        humedad_ambiente += ajuste
+
+        if (humedad_ambiente) < humedad_externa:
+
+            return round(humedad_ambiente, 2)
+
+        else:
+            return round(humedad_externa, 2)
