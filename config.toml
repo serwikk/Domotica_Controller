@@ -2,6 +2,7 @@
 huso = "Europe/Madrid"
 habitaculo = "cocina"
 carpeta_logs = "logs"
+aislamiento_termico = 0.7
 
 [lux]
 lux_max_cenit = 5000
@@ -23,7 +24,7 @@ area = 80
 modo = "auto"
 
 [config_controlador.climatizador]   
-temperatura_min = 20
+temperatura_min = 18
 temperatura_max = 30
 
 [config_controlador.ventana]
@@ -31,7 +32,7 @@ continuar = 1
 
 [config_controlador.humidificador]
 humedad_min = 40
-humedad_max = 60
+humedad_max = 70
 
 [config_controlador.persiana]
 velocidad = 1

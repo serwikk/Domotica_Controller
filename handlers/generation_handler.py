@@ -48,3 +48,34 @@ def generar_id_aleatorio(prefijo: str = None, longitud: int = 10):
         id_aleatorio = prefijo + id_aleatorio
     
     return id_aleatorio
+
+
+#-------------------------------------------------------------------------------------------------------
+# FUNCIONES PARA EL MANEJO DE VALORES INTERNOS Y EXTERNOS
+
+def temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, temperatura_externa):
+
+    aislamiento_termico = config_tomlHandler.obtener_valor('config', 'aislamiento_termico')
+
+    factor_inercia = round(1 - aislamiento_termico, 2)
+
+    temperatura_ambiente = valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', 'temperatura')
+
+    climatizador_en_funcionamiento = valores_actuales_tomlHandler.obtener_valor('actuadores', 'climatizador')['en_funcionamiento']
+
+    if climatizador_en_funcionamiento:
+        return temperatura_ambiente
+
+    else:
+        diferencia = round(abs(temperatura_externa - temperatura_ambiente), 2)
+
+        ajuste = diferencia * factor_inercia
+
+        temperatura_ambiente += ajuste
+
+        if (temperatura_ambiente) < temperatura_externa:
+
+            return round(temperatura_ambiente, 2)
+
+        else:
+            return round(temperatura_externa)
