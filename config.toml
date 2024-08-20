@@ -10,7 +10,12 @@ lux_artificial = 500
 lux_noche_farolas = 10
 grados_lux_directa = 60
 
-[ventanas]
+[modos]
+climatizador = "auto"
+humidificador = "auto"
+luz = "auto"
+ventana = "auto"
+persiana = "auto"
 
 [ventanas.ventana1]
 orientacion = 180
@@ -20,15 +25,9 @@ area = 120
 orientacion = 90
 area = 80
 
-[config_controlador]
-modo = "auto"
-
-[config_controlador.climatizador]   
+[config_controlador.climatizador]
 temperatura_min = 18
 temperatura_max = 30
-
-[config_controlador.ventana]
-continuar = 1
 
 [config_controlador.humidificador]
 humedad_min = 40

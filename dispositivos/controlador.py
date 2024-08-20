@@ -90,7 +90,6 @@ class Controlador():
     @staticmethod
     def gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, climatizador, humidificador):
         
-        print("---------------------------------------------------------------------------------")
         print(f"Temperatura ambiente: {temperatura_ambiente}ºC")
         print(f"Temperatura objetivo: {temperatura_objetivo_climatizador}ºC")
 
@@ -121,8 +120,7 @@ class Controlador():
 
     @staticmethod
     def gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, humidificador):
-        
-        print("---------------------------------------------------------------------------------")
+
         print(f"Humedad_ambiente: {humedad_ambiente}%")
         print(f"Humedad objetivo: {humedad_objetivo_humidificador}%")
 
@@ -162,7 +160,6 @@ class Controlador():
         valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
         luz_ambiente = valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', 'luz_ambiente')
         
-        print("---------------------------------------------------------------------------------")
         print(f"Luz ambiente: {luz_ambiente}")
         print(f"Luz resultante: {luz_resultante}")
         print(f"Presencia: {presencia}")

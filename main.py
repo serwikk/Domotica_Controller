@@ -2,35 +2,29 @@ from dispositivos.controlador import Controlador
 
 from handlers.toml_handler import TOMLHandler
 from handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
+from handlers.datetime_handler import DatetimeHandler
 import logging
 from time import sleep
-
-
-def ejecutar_modo_auto(temperatura_ambiente, temperatura_objetivo_climatizador, actuador_climatizador, actuador_humidificador, 
-                        humedad_ambiente, humedad_objetivo_humidificador,
-                        luz_resultante, presencia, actuador_luz):
-
-    Controlador.gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, actuador_climatizador, actuador_humidificador)
-    Controlador.gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, actuador_humidificador)
-    Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
-
-
 
 def main():
     
     debug_logger_handler = DebugConsoleLoggerHandler()
 
+    datetime_handler = DatetimeHandler()
+
     config_tomlhandler = TOMLHandler('config.toml')
 
     habitaculo = config_tomlhandler.obtener_valor('config', 'habitaculo')
 
-    modo = config_tomlhandler.obtener_valor('config_controlador', 'modo')
+    modos = config_tomlhandler.obtener_valores_seccion('modos')
 
     controlador = Controlador(habitaculo, 
                     nombres_sensores=['sensor_temperatura', 'sensor_humedad', 'sensor_luz', 'sensor_presencia'],
                     nombres_actuadores=['actuador_persiana', 'actuador_ventana', 'actuador_luz', 'actuador_puerta', 'actuador_climatizador', 'actuador_humidificador'])
 
     # debug_logger_handler.logger.debug(vars(controlador))
+
+    print(datetime_handler.fecha_completa)
 
     actuador_ventana = controlador.actuadores['actuador_ventana']
 
@@ -59,16 +53,25 @@ def main():
     luz_resultante = datos_actuales_perifericos['sensor_luz']
     presencia = datos_actuales_perifericos['sensor_presencia']
 
-    
-    if modo == "auto":
-        print("Modo actual: Automático")
-        ejecutar_modo_auto(temperatura_ambiente, temperatura_objetivo_climatizador, actuador_climatizador, actuador_humidificador, 
-                            humedad_ambiente, humedad_objetivo_humidificador,
-                            luz_resultante, presencia, actuador_luz)
+    if modos['climatizador'] == 'auto':
+        
+        print("---------------------------------------------------------------------------------")
+        print("Modo climatizador AUTO")
+        Controlador.gestionar_temperatura(temperatura_ambiente, temperatura_objetivo_climatizador, actuador_climatizador, actuador_humidificador)
 
-    if modo == "manual":
-        print("Modo actual: Manual")
 
+    if modos['humidificador'] == 'auto':
+        
+        print("---------------------------------------------------------------------------------")
+        print("Modo humidificador AUTO")
+        Controlador.gestionar_humedad(humedad_ambiente, humedad_objetivo_humidificador, actuador_humidificador)
+
+
+    if modos['luz'] == 'auto':
+        
+        print("---------------------------------------------------------------------------------")
+        print("Modo luz AUTO")
+        Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
 
 
 if __name__ == "__main__":

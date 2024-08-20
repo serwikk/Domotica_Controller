@@ -863,3 +863,6 @@
 2024-08-20 19:56:49,881 - csv_logger_handler - INFO - Obtenido el valor 35.00 de la hora 19 del mes de agosto
 2024-08-20 19:56:49,881 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
 2024-08-20 19:56:49,881 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-20 22:42:15,286 - csv_logger_handler - INFO - Obtenido el valor 30.93 de la hora 22 del mes de agosto
+2024-08-20 22:42:15,287 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
+2024-08-20 22:42:15,287 - csv_logger_handler - INFO - Obtenido los valores mínimo 30.0 y máximo 60.0 del espacio cocina
