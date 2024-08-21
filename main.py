@@ -3,6 +3,7 @@ from dispositivos.controlador import Controlador
 from handlers.toml_handler import TOMLHandler
 from handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
 from handlers.datetime_handler import DatetimeHandler
+from handlers import preparation_handler as prep
 import logging
 from time import sleep
 
@@ -19,16 +20,20 @@ def main():
     modos = config_tomlhandler.obtener_valores_seccion('modos')
 
     controlador = Controlador(habitaculo, 
-                    nombres_sensores=['sensor_temperatura', 'sensor_humedad', 'sensor_luz', 'sensor_presencia'],
-                    nombres_actuadores=['actuador_persiana', 'actuador_ventana', 'actuador_luz', 'actuador_puerta', 'actuador_climatizador', 'actuador_humidificador'])
+                    nombres_sensores=['sensor_temperatura', 
+                                      'sensor_humedad',
+                                      'sensor_luz',
+                                      'sensor_presencia'],
+                    nombres_actuadores=['actuador_persiana',
+                                        # 'actuador_ventana',
+                                        'actuador_luz',
+                                        # 'actuador_puerta',
+                                        'actuador_climatizador',
+                                        'actuador_humidificador'])
 
-    # debug_logger_handler.logger.debug(vars(controlador))
+    # actuador_ventana = controlador.actuadores['actuador_ventana']
 
-    print(datetime_handler.fecha_completa)
-
-    actuador_ventana = controlador.actuadores['actuador_ventana']
-
-    actuador_puerta = controlador.actuadores['actuador_puerta']
+    # actuador_puerta = controlador.actuadores['actuador_puerta']
 
     actuador_persiana = controlador.actuadores['actuador_persiana']
 
@@ -39,8 +44,6 @@ def main():
     actuador_humidificador = controlador.actuadores['actuador_humidificador']
 
     datos_actuales_perifericos = controlador.obtener_datos_actuales_perifericos()
-
-    # print(datos_actuales_perifericos)
 
     temperatura_ambiente = datos_actuales_perifericos['sensor_temperatura']
     temperatura_objetivo_climatizador = datos_actuales_perifericos['actuador_climatizador']['estado']
@@ -73,7 +76,11 @@ def main():
         print("Modo luz AUTO")
         Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
 
-        
+
+    datos = prep.preparar_datos(datetime_handler, controlador)
+    
+
+
 
 
 if __name__ == "__main__":

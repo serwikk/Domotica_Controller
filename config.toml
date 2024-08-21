@@ -11,11 +11,11 @@ lux_noche_farolas = 10
 grados_lux_directa = 60
 
 [modos]
-climatizador = "auto"
-humidificador = "auto"
-luz = "auto"
-ventana = "auto"
-persiana = "auto"
+climatizador = "off"
+humidificador = "off"
+luz = "off"
+ventana = "off"
+persiana = "off"
 
 [ids]
 controlador = "contr-d0sQ5oifze"
