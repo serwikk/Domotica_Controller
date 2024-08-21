@@ -4,6 +4,8 @@ charset-normalizer==3.3.2
 contourpy==1.2.1
 cycler==0.12.1
 dill==0.3.8
+elastic-transport==8.15.0
+elasticsearch==8.15.0
 fonttools==4.53.1
 h5py==3.11.0
 idna==3.7
