@@ -1,6 +1,6 @@
 [valores_magnitudes]
-temperatura = 29.91
-humedad = 45.82
+temperatura = 23.16
+humedad = 38.27
 luz_ambiente = 2.89
 luz_resultante = 2.89
 presencia = false
@@ -26,5 +26,5 @@ en_funcionamiento = true
 estado = 22.0
 
 [actuadores.humidificador]
-en_funcionamiento = false
+en_funcionamiento = true
 estado = 50.0

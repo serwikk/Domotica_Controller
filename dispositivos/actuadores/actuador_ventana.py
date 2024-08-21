@@ -7,4 +7,4 @@ class ActuadorVentana(Actuador):
 
     def __init__(self):
         
-        super().__init__( id= generar_id_aleatorio("vent-"), tipo_actuador='ventana')
+        super().__init__( prefijo= "vent-", tipo_actuador='ventana')

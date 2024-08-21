@@ -17,6 +17,19 @@ luz = "auto"
 ventana = "auto"
 persiana = "auto"
 
+[ids]
+controlador = "contr-d0sQ5oifze"
+temperatura = "temp-6X6jGn2434"
+humedad = "hum-HJo8QenvfZ"
+luz_resultante = "lux-WCWEeKo6We"
+ventana = "vent-TbNe2XYxd9"
+luz = "luz-fb9t8M06Xd"
+puerta = "puer-UhXIo2ilMk"
+climatizador = "clim-OXVwejXTxv"
+humidificador = "humid-PCCOYHMYcZ"
+presencia = "prese-ejZCsREI0Y"
+persiana = "persi-IksNLbRbwD"
+
 [ventanas.ventana1]
 orientacion = 180
 area = 120

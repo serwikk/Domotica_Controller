@@ -73,6 +73,8 @@ def main():
         print("Modo luz AUTO")
         Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
 
+        
+
 
 if __name__ == "__main__":
 

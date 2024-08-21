@@ -18,9 +18,23 @@ class Controlador():
 
     def __init__(self, espacio, nombres_sensores = [], nombres_actuadores = []):
         self.espacio = espacio
-        self.id_controlador = generar_id_aleatorio(f"contr-")
+        self.config_tomlHandler = TOMLHandler('config.toml')
+        self.id = self.obtener_id()
         self.sensores = self.inicializar_sensores(nombres_sensores)
         self.actuadores = self.inicializar_actuadores(nombres_actuadores)
+
+    def obtener_id(self):
+
+        id = self.config_tomlHandler.obtener_valor('ids', 'controlador')
+        if not id:
+            print("El controlador no tiene un id asociado")
+            id_nuevo = generar_id_aleatorio(f"contr-")
+            print(f"id nuevo: {id_nuevo}")
+            self.config_tomlHandler.establecer_valor('ids', 'controlador', id_nuevo)
+
+            return id_nuevo
+
+        return id
 
     def inicializar_sensores(self, nombres_sensores):
 

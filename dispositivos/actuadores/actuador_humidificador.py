@@ -8,7 +8,7 @@ class ActuadorHumidificador(Actuador):
 
     def __init__(self):
         
-        super().__init__( id= generar_id_aleatorio("humid-"), tipo_actuador='humidificador')
+        super().__init__( prefijo = "humid-", tipo_actuador='humidificador')
 
 
     def subir_humedad_ambiente(self):

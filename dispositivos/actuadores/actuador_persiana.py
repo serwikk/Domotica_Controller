@@ -7,7 +7,7 @@ class ActuadorPersiana(Actuador):
 
     def __init__(self):
         
-        super().__init__( id= generar_id_aleatorio("pers-"), tipo_actuador='persiana')
+        super().__init__( prefijo= "persi-", tipo_actuador='persiana')
 
 
 

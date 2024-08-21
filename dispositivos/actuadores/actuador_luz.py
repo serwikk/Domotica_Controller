@@ -8,7 +8,7 @@ class ActuadorLuz(Actuador):
 
     def __init__(self):
         
-        super().__init__( id= generar_id_aleatorio("luz-"), tipo_actuador='luz')
+        super().__init__( prefijo= "luz-", tipo_actuador='luz')
 
     
     def encender(self):

@@ -8,7 +8,7 @@ class ActuadorClimatizador(Actuador):
 
     def __init__(self):
         
-        super().__init__( id= generar_id_aleatorio("clim-"), tipo_actuador='climatizador')
+        super().__init__( prefijo= "clim-", tipo_actuador='climatizador')
 
 
     def subir_temperatura_ambiente(self):
