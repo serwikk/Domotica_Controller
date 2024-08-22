@@ -70,3 +70,23 @@ def preparar_datos(datetime_handler, controlador):
     datos['modos'] = modos
 
     return datos
+
+
+
+
+def preparar_datos_evento(tipo_evento, datetime_inicio, datetime_fin, duracion, datos):
+
+    datos_evento = dict()
+
+    datos_evento['tipo_evento'] = tipo_evento
+    datos_evento['fecha'] = datetime_inicio
+    datos_evento['fecha_fin'] = datetime_fin
+    datos_evento['duracion'] = duracion
+
+    for dato in datos:
+
+        dato_str = dato.replace('ambiente', 'final') if 'ambiente' in dato else dato
+
+        datos_evento[dato_str] = datos[dato]
+
+    return datos_evento

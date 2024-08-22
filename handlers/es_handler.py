@@ -44,11 +44,11 @@ class ESHandler:
         return time
     
 
-    def enviar_datos(self, datos):
+    def enviar_datos(self, indice, datos):
 
         datos['fecha'] = self.obtener_fecha_correcta_para_ES(datos['fecha'])
 
         if self.conexion_exitosa:
 
-            response = self.es.index(index=datos['espacio'], document=datos)
+            response = self.es.index(index=indice, document=datos)
             # print(response)

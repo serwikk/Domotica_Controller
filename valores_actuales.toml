@@ -1,8 +1,8 @@
 [valores_magnitudes]
-temperatura = 26.55
-humedad = 43.41
-luz_ambiente = 2697.41
-luz_resultante = 2697.41
+temperatura = 25.52
+humedad = 39.59
+luz_ambiente = 3987.76
+luz_resultante = 3987.76
 presencia = true
 
 [actuadores.persiana]
@@ -22,9 +22,9 @@ en_funcionamiento = false
 estado = 0.2
 
 [actuadores.climatizador]
-en_funcionamiento = false
-estado = 22
+en_funcionamiento = true
+estado = 24
 
 [actuadores.humidificador]
-en_funcionamiento = false
+en_funcionamiento = true
 estado = 50.0
