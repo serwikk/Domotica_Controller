@@ -15,7 +15,7 @@ grados_lux_directa = 60
 
 [modos]
 climatizador = "auto"
-humidificador = "auto"
+humidificador = "off"
 luz = "auto"
 ventana = "auto"
 persiana = "auto"

@@ -63,7 +63,9 @@ def temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler
 
     climatizador_en_funcionamiento = valores_actuales_tomlHandler.obtener_valor('actuadores', 'climatizador')['en_funcionamiento']
 
-    if climatizador_en_funcionamiento:
+    climatizador_auto = config_tomlHandler.obtener_valor('modos', 'climatizador')
+
+    if climatizador_en_funcionamiento and climatizador_auto == "auto":
         return temperatura_ambiente
 
     else:
@@ -73,7 +75,7 @@ def temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler
 
         temperatura_ambiente += ajuste
 
-        if (temperatura_ambiente) < temperatura_externa:
+        if temperatura_ambiente < temperatura_externa:
 
             return round(temperatura_ambiente, 2)
 
@@ -82,6 +84,7 @@ def temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler
         
 
 def humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, humedad_externa):
+    
 
     aislamiento_termico = config_tomlHandler.obtener_valor('config', 'aislamiento_termico')
 
@@ -91,17 +94,23 @@ def humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, hu
 
     humidificador_en_funcionamiento = valores_actuales_tomlHandler.obtener_valor('actuadores', 'humidificador')['en_funcionamiento']
 
-    if humidificador_en_funcionamiento:
+    humidificador_auto = config_tomlHandler.obtener_valor('modos', 'humidificador')
+
+    if humidificador_en_funcionamiento and humidificador_auto == "auto":
         return humedad_ambiente
 
     else:
         diferencia = round(abs(humedad_externa - humedad_ambiente), 2)
 
+        print(f"humedad_externa: {humedad_externa}")
+        print(f"humedad_ambiente: {humedad_ambiente}")
+        print(f"diferencia: {diferencia}")
+
         ajuste = diferencia * factor_inercia
 
         humedad_ambiente += ajuste
 
-        if (humedad_ambiente) < humedad_externa:
+        if humedad_ambiente < humedad_externa:
 
             return round(humedad_ambiente, 2)
 
