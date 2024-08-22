@@ -4,6 +4,9 @@ habitaculo = "cocina"
 carpeta_logs = "logs"
 aislamiento_termico = 0.7
 
+[es]
+url = "http://localhost:9200"
+
 [lux]
 lux_max_cenit = 5000
 lux_artificial = 500

@@ -6,6 +6,7 @@ from handlers import generation_handler
 
 import logging
 from handlers.logger_handler import LoggerHandler
+import time
 
 
 def main():
@@ -58,7 +59,11 @@ def main():
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura_final)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad_final)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_resultante', valor_lux)
 
 
 if __name__=="__main__":
-    main()
+
+    while True:
+        main()
+        time.sleep(60)

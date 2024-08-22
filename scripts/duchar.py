@@ -47,7 +47,7 @@ def main():
             print(f"Ducha terminada a los {args.segundos} segundos")
             break
 
-        time.sleep(2)
+        time.sleep(5)
 
 
 

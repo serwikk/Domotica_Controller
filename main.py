@@ -3,6 +3,7 @@ from dispositivos.controlador import Controlador
 from handlers.toml_handler import TOMLHandler
 from handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
 from handlers.datetime_handler import DatetimeHandler
+from handlers.es_handler import ESHandler
 from handlers import preparation_handler as prep
 import logging
 from time import sleep
@@ -13,7 +14,11 @@ def main():
 
     datetime_handler = DatetimeHandler()
 
+    print(f"Ejecución: {datetime_handler.fecha_completa}")
+
     config_tomlhandler = TOMLHandler('config.toml')
+
+    es_handler = ESHandler()
 
     habitaculo = config_tomlhandler.obtener_valor('config', 'habitaculo')
 
@@ -77,7 +82,12 @@ def main():
         Controlador.gestionar_luz(luz_resultante, presencia, actuador_luz)
 
 
+    ##### PREPARACIÓN DE DATOS #####
     datos = prep.preparar_datos(datetime_handler, controlador)
+
+
+    ##### ENVÍO DE DATOS A ELASTICSEARCH #####
+    es_handler.enviar_datos(datos)
     
 
 

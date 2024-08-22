@@ -63,5 +63,10 @@ def preparar_datos(datetime_handler, controlador):
         datos['actuadores'][actuador_str] = datos_actuador
 
 
+    #### MODOS ####
+
+    modos = variables['config_tomlHandler'].obtener_valores_seccion('modos')
+
+    datos['modos'] = modos
 
     return datos

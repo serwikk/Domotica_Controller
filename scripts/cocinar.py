@@ -47,7 +47,7 @@ def main():
             print(f"Proceso de cocina terminada a los {args.segundos} segundos")
             break
 
-        time.sleep(2)
+        time.sleep(5)
 
 
 
