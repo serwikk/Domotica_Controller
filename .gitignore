@@ -1,19 +1,2 @@
-
-# Archivos generados por IDEs
 .venv
-
-# Archivos log
-handlers/logs
-
-# Archivos para hacer pruebas
-pruebas.py
-
-# Archivos de byte en Python
 __pycache__
-
-# Archivos drawio
-Arquitectura-diseño.drawio
-Arquitectura-diseño.drawio:Zone.Identifier
-
-# Archivos de cuando están abiertos los excel, word o powerpoint
-docs/~$info_sensores.xlsx
