@@ -5,8 +5,8 @@ from src.handlers.toml_handler import TOMLHandler
 class Actuador:
 
     def __init__(self, prefijo, tipo_actuador):
-        self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='valores_actuales.toml')
-        self.config_tomlHandler = TOMLHandler(ruta_archivo='config.toml')
+        self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='toml/valores_actuales.toml')
+        self.config_tomlHandler = TOMLHandler(ruta_archivo='toml/config.toml')
         self.tipo_actuador = tipo_actuador
         self.id = self.obtener_id(prefijo)
         self.en_funcionamiento = self.leer_valores()['en_funcionamiento']

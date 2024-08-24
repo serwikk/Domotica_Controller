@@ -13,7 +13,7 @@ def main():
 
     parser.add_argument('--estado', '-e', type=float, help="Establece el valor del humidificador.")
 
-    config_tomlHandler = TOMLHandler('config.toml')
+    config_tomlHandler = TOMLHandler('toml/config.toml')
 
     valores = config_tomlHandler.obtener_valores_seccion('config_controlador')['humidificador']
     humedad_min = valores['humedad_min']

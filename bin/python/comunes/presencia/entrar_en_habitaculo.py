@@ -7,7 +7,7 @@ from src.handlers.toml_handler import TOMLHandler
 
 def main():
 
-    valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
+    valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'presencia', True)
 

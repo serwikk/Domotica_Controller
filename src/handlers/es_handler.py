@@ -9,7 +9,7 @@ class ESHandler:
 
     def __init__(self):
 
-        self.config_tomlHandler = TOMLHandler('config.toml')
+        self.config_tomlHandler = TOMLHandler('toml/config.toml')
         self.es = Elasticsearch(self.config_tomlHandler.obtener_valor('es', 'url'))
         self.conexion_exitosa = self.conectar()
 

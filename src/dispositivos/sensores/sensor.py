@@ -5,12 +5,12 @@ from src.handlers.generation_handler import generar_id_aleatorio
 class Sensor:
 
     def __init__(self, prefijo, magnitud, en_funcionamiento, unidad):
-        self.config_tomlHandler = TOMLHandler(ruta_archivo='config.toml')
+        self.config_tomlHandler = TOMLHandler(ruta_archivo='toml/config.toml')
         self.magnitud = magnitud
         self.id = self.obtener_id(prefijo)
         self.en_funcionamiento = en_funcionamiento
         self.unidad = unidad
-        self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='valores_actuales.toml')
+        self.valores_actuales_tomlHandler = TOMLHandler(ruta_archivo='toml/valores_actuales.toml')
 
         
 

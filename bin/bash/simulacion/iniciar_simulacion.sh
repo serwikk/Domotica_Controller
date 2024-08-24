@@ -1,4 +1,4 @@
-cd /home/scalian/Domotica_Controller
+cd /home/serwikk/Domotica_Controller
 
 source .venv/bin/activate
 

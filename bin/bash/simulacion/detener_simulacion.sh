@@ -1,11 +1,29 @@
-cd /home/scalian/Domotica_Controller
+cd /home/serwikk/Domotica_Controller
 
 source .venv/bin/activate
 
 echo Deteniendo simulación...
 
-PID1=$(ps aux | grep python3 | grep simulacion.py | grep -v grep | awk '{print $2}')
+PID1=$(ps aux | grep python3 | grep simulacion_controlador.py | grep -v grep | awk '{print $2}')
 PID2=$(ps aux | grep python3 | grep factores_externos.py | grep -v grep | awk '{print $2}')
 
-kill $PID1
-kill $PID2
+echo $PID1
+
+if [ -n "$PID1" ]; then
+    echo "Deteniendo simulacion.py"
+    kill $PID1
+else
+    echo "simulacion.py ya está detenida"
+
+fi
+
+
+echo $PID2
+
+if [ -n "$PID2" ]; then
+    echo "Deteniendo factores_externos.py"
+    kill $PID2
+else
+    echo "factores_externos.py ya está detenida"
+
+fi

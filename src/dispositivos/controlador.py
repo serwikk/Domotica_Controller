@@ -18,7 +18,7 @@ class Controlador():
 
     def __init__(self, espacio, nombres_sensores = [], nombres_actuadores = []):
         self.espacio = espacio
-        self.config_tomlHandler = TOMLHandler('config.toml')
+        self.config_tomlHandler = TOMLHandler('toml/config.toml')
         self.id = self.obtener_id()
         self.sensores = self.inicializar_sensores(nombres_sensores)
         self.actuadores = self.inicializar_actuadores(nombres_actuadores)
@@ -171,7 +171,7 @@ class Controlador():
     @staticmethod
     def gestionar_luz(luz_resultante, presencia, actuador_luz):
 
-        valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
+        valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
         luz_ambiente = valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', 'luz_ambiente')
         
         print(f"Luz ambiente: {luz_ambiente}")

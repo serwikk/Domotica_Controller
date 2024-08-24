@@ -13,7 +13,7 @@ import datetime
 
 def main():
 
-    valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
+    valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
 
     parser = argparse.ArgumentParser(description="Script para simular cocina.")
 

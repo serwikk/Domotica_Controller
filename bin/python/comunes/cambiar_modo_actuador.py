@@ -2,13 +2,13 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from handlers.toml_handler import TOMLHandler
+from src.handlers.toml_handler import TOMLHandler
 import argparse
 
 
 def main():
 
-    config_tomlHandler = TOMLHandler('config.toml')
+    config_tomlHandler = TOMLHandler('toml/config.toml')
 
     actuadores = config_tomlHandler.obtener_valores_seccion('modos').keys()
 
