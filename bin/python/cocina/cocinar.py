@@ -2,9 +2,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from handlers.toml_handler import TOMLHandler
-from handlers.preparation_handler import preparar_datos_evento
-from handlers.es_handler import ESHandler
+from src.handlers.toml_handler import TOMLHandler
+from src.handlers.preparation_handler import preparar_datos_evento
+from src.handlers.es_handler import ESHandler
 import argparse
 import random as rd
 import time

@@ -3,10 +3,10 @@ from pvlib.location import Location
 import pandas as pd
 import math
 
-from handlers.datetime_handler import DatetimeHandler
-from handlers.csv_handler import CSVHandler
-from handlers.logger_handler import LoggerHandler
-import handlers.generation_handler as gh
+from src.handlers.datetime_handler import DatetimeHandler
+from src.handlers.csv_handler import CSVHandler
+from src.handlers.logger_handler import LoggerHandler
+import src.handlers.generation_handler as gh
 import logging
 
 class PVlibHandler:

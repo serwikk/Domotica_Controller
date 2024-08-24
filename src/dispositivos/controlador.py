@@ -1,17 +1,17 @@
-from handlers.generation_handler import generar_id_aleatorio
-from handlers.toml_handler import TOMLHandler
+from src.handlers.generation_handler import generar_id_aleatorio
+from src.handlers.toml_handler import TOMLHandler
 
-from dispositivos.sensores.sensor_temperatura import SensorTemperatura
-from dispositivos.sensores.sensor_humedad import SensorHumedad
-from dispositivos.sensores.sensor_luz import SensorLuz
-from dispositivos.sensores.sensor_presencia import SensorPresencia
+from src.dispositivos.sensores.sensor_temperatura import SensorTemperatura
+from src.dispositivos.sensores.sensor_humedad import SensorHumedad
+from src.dispositivos.sensores.sensor_luz import SensorLuz
+from src.dispositivos.sensores.sensor_presencia import SensorPresencia
 
-from dispositivos.actuadores.actuador_persiana import ActuadorPersiana
-from dispositivos.actuadores.actuador_ventana import ActuadorVentana
-from dispositivos.actuadores.actuador_luz import ActuadorLuz
-from dispositivos.actuadores.actuador_puerta import ActuadorPuerta
-from dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
-from dispositivos.actuadores.actuador_humidificador import ActuadorHumidificador
+from src.dispositivos.actuadores.actuador_persiana import ActuadorPersiana
+from src.dispositivos.actuadores.actuador_ventana import ActuadorVentana
+from src.dispositivos.actuadores.actuador_luz import ActuadorLuz
+from src.dispositivos.actuadores.actuador_puerta import ActuadorPuerta
+from src.dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
+from src.dispositivos.actuadores.actuador_humidificador import ActuadorHumidificador
 
 
 class Controlador():

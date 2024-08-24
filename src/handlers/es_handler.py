@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 import pytz
 from datetime import datetime, timedelta
 
-from handlers.toml_handler import TOMLHandler
+from src.handlers.toml_handler import TOMLHandler
 
 class ESHandler:
 

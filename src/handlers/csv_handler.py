@@ -1,7 +1,7 @@
 import csv
 import os
 import logging
-from handlers.logger_handler import LoggerHandler
+from src.handlers.logger_handler import LoggerHandler
 
 class CSVHandler:
 

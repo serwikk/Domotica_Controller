@@ -1,8 +1,6 @@
-from handlers.generation_handler import generar_id_aleatorio
-from handlers.toml_handler import TOMLHandler
-import random as rd
+from src.dispositivos.actuadores.actuador import Actuador 
 
-from dispositivos.actuadores.actuador import Actuador 
+import random as rd
 
 class ActuadorClimatizador(Actuador):
 

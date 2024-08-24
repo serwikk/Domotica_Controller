@@ -1,5 +1,5 @@
-from dispositivos.sensores.sensor import Sensor
-from handlers.generation_handler import generar_id_aleatorio
+from src.dispositivos.sensores.sensor import Sensor
+from src.handlers.generation_handler import generar_id_aleatorio
 
 
 class SensorPresencia(Sensor):

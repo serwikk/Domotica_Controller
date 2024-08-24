@@ -1,11 +1,17 @@
-from handlers.csv_handler import CSVHandler
-from handlers.datetime_handler import DatetimeHandler
-from handlers.pvlib_handler import PVlibHandler
-from handlers.toml_handler import TOMLHandler
-from handlers import generation_handler
+import sys
+import os
+
+# Añadir la raíz del proyecto al PYTHONPATH
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
+from src.handlers.csv_handler import CSVHandler
+from src.handlers.datetime_handler import DatetimeHandler
+from src.handlers.pvlib_handler import PVlibHandler
+from src.handlers.toml_handler import TOMLHandler
+from src.handlers.logger_handler import LoggerHandler
+from src.handlers import generation_handler
 
 import logging
-from handlers.logger_handler import LoggerHandler
 import time
 
 
@@ -20,8 +26,9 @@ def main():
     # Invocación de handlers
     datetime_handler = DatetimeHandler()
     loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
-    valores_actuales_tomlHandler = TOMLHandler('valores_actuales.toml')
-    config_tomlHandler = TOMLHandler('config.toml')
+    valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
+    config_tomlHandler = TOMLHandler('toml/config.toml')
+
 
     HUSO = config_tomlHandler.obtener_valor('config', 'huso')
     HABITACULO = config_tomlHandler.obtener_valor('config', 'habitaculo')
@@ -30,7 +37,7 @@ def main():
     print(f"Fecha y hora: {datetime_handler.fecha_completa}")
 
     # Temperatura
-    temperatura_csv_handler = CSVHandler('handlers/csv/temperaturas_hora_mes_vitoria.csv')
+    temperatura_csv_handler = CSVHandler('src/handlers/csv/temperaturas_hora_mes_vitoria.csv')
 
     valor_temperatura = temperatura_csv_handler.buscar_valor_temperatura(datetime_handler.hora, DatetimeHandler.obtener_mes_string(datetime_handler.mes))
 
@@ -39,7 +46,7 @@ def main():
     print(f"Temperatura: {valor_temperatura}")
 
     # Humedad
-    humedad_csv_handler = CSVHandler('handlers/csv/humedad_por_habitaciones.csv')
+    humedad_csv_handler = CSVHandler('src/handlers/csv/humedad_por_habitaciones.csv')
 
     valores_espacio = humedad_csv_handler.buscar_valor_humedad(HABITACULO)
 

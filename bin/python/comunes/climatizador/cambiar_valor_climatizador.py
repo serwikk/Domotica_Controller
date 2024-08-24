@@ -2,8 +2,8 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
-from handlers.toml_handler import TOMLHandler
+from src.dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
+from src.handlers.toml_handler import TOMLHandler
 import argparse
 
 

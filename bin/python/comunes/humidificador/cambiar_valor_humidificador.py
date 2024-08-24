@@ -2,8 +2,8 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from dispositivos.actuadores.actuador_humidificador import ActuadorHumidificador
-from handlers.toml_handler import TOMLHandler
+from src.dispositivos.actuadores.actuador_humidificador import ActuadorHumidificador
+from src.handlers.toml_handler import TOMLHandler
 import argparse
 
 

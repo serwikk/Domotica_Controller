@@ -1,5 +1,5 @@
 import toml
-from handlers.logger_handler import LoggerHandler
+from src.handlers.logger_handler import LoggerHandler
 import logging
 
 class TOMLHandler:

@@ -1,5 +1,5 @@
-from handlers.generation_handler import generar_id_aleatorio
-from handlers.toml_handler import TOMLHandler
+from src.handlers.generation_handler import generar_id_aleatorio
+from src.handlers.toml_handler import TOMLHandler
 
 
 class Actuador:

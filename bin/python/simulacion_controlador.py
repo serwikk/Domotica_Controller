@@ -1,10 +1,16 @@
-from dispositivos.controlador import Controlador
+import sys
+import os
 
-from handlers.toml_handler import TOMLHandler
-from handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
-from handlers.datetime_handler import DatetimeHandler
-from handlers.es_handler import ESHandler
-from handlers import preparation_handler as prep
+# Añadir la raíz del proyecto al PYTHONPATH
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
+from src.dispositivos.controlador import Controlador
+
+from src.handlers.toml_handler import TOMLHandler
+from src.handlers.logger_handler import LoggerHandler, DebugConsoleLoggerHandler
+from src.handlers.datetime_handler import DatetimeHandler
+from src.handlers.es_handler import ESHandler
+from src.handlers import preparation_handler as prep
 import logging
 from time import sleep
 
@@ -16,7 +22,7 @@ def main():
 
     print(f"Ejecución: {datetime_handler.fecha_completa}")
 
-    config_tomlhandler = TOMLHandler('config.toml')
+    config_tomlhandler = TOMLHandler('toml/config.toml')
 
     es_handler = ESHandler()
 
