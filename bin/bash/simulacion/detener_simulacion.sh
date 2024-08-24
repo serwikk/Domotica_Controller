@@ -7,8 +7,6 @@ echo Deteniendo simulación...
 PID1=$(ps aux | grep python3 | grep simulacion_controlador.py | grep -v grep | awk '{print $2}')
 PID2=$(ps aux | grep python3 | grep factores_externos.py | grep -v grep | awk '{print $2}')
 
-echo $PID1
-
 if [ -n "$PID1" ]; then
     echo "Deteniendo simulacion.py"
     kill $PID1
@@ -17,8 +15,6 @@ else
 
 fi
 
-
-echo $PID2
 
 if [ -n "$PID2" ]; then
     echo "Deteniendo factores_externos.py"

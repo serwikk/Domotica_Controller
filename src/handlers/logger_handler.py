@@ -5,7 +5,7 @@ class LoggerHandler:
     def __init__(self, nombre_archivo, nombre_logger, nivel):
         self.nombre_archivo = nombre_archivo
         self.nombre_logger = nombre_logger
-        self.nivel = nivel
+        self.nivel = self.obtener_nivel_desde_string(nivel)
         
         # Crear un logger para esta instancia de LoggerHandler
         self.logger = logging.getLogger(self.nombre_logger)
@@ -21,6 +21,28 @@ class LoggerHandler:
         
         # Agregar el manejador al logger
         self.logger.addHandler(file_handler)
+
+
+    def obtener_nivel_desde_string(self, nivel):
+
+        if not isinstance(nivel, str):
+            print("Esto no es un string")
+            return nivel
+
+        if nivel.lower() == 'debug':
+            return logging.DEBUG
+        
+        elif nivel.lower() == 'info':
+            return logging.INFO
+        
+        elif nivel.lower() == 'warn':
+            return logging.WARN
+        
+        elif nivel.lower() == 'error':
+            return logging.ERROR
+        
+        elif nivel.lower() == 'critical':
+            return logging.CRITICAL
 
 
 class DebugConsoleLoggerHandler:

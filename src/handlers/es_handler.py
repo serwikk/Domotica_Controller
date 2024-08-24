@@ -4,10 +4,17 @@ import pytz
 from datetime import datetime, timedelta
 
 from src.handlers.toml_handler import TOMLHandler
+from src.handlers.logger_handler import LoggerHandler
 
 class ESHandler:
 
-    def __init__(self):
+    def __init__(self, logger = False):
+
+        if logger:
+            self.loggerHandler = LoggerHandler('logs/es_logger.log', 'es_logger', 'info')
+
+        else:
+            self.loggerHandler = None
 
         self.config_tomlHandler = TOMLHandler('toml/config.toml')
         self.es = Elasticsearch(self.config_tomlHandler.obtener_valor('es', 'url'))
@@ -17,11 +24,16 @@ class ESHandler:
     def conectar(self):
 
         if self.es.ping():
-            # print("Conectado a Elasticsearch")
+
+            if self.loggerHandler:
+                self.loggerHandler.logger.info("Conectado a Elasticsearch")
+
             return True
 
         else:
-            # print("No se puede conectar a Elasticsearch")
+            if self.loggerHandler:
+                self.loggerHandler.logger.error("No se puede conectar a Elasticsearch")
+
             return False
         
 
@@ -51,4 +63,6 @@ class ESHandler:
         if self.conexion_exitosa:
 
             response = self.es.index(index=indice, document=datos)
-            # print(response)
+
+            if self.loggerHandler:
+                self.loggerHandler.logger.info(f"Nuevos datos metidos en el índice '{response['_index']}'")

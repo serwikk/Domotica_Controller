@@ -5,7 +5,7 @@ import string
 import logging
 from src.handlers.logger_handler import LoggerHandler
 
-generation_logger_handler = LoggerHandler('logs/generation_handler.log', 'generation_logger_handler' ,logging.INFO)
+generation_logger_handler = LoggerHandler('logs/generation_handler.log', 'generation_logger_handler' , 'info')
 
 def agregar_umbral_a_valor(valor: float, umbral: float = 1) -> float:
 

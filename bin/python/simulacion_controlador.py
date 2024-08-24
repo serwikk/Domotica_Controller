@@ -24,7 +24,7 @@ def main():
 
     config_tomlhandler = TOMLHandler('toml/config.toml')
 
-    es_handler = ESHandler()
+    es_handler = ESHandler(logger=True)
 
     habitaculo = config_tomlhandler.obtener_valor('config', 'habitaculo')
 

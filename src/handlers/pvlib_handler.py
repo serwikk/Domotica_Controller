@@ -17,7 +17,10 @@ class PVlibHandler:
         self.timezone = timezone
 
         if logger:
-            self.loggerHandler = LoggerHandler('logs/pvlib.log', 'pvlib', logging.INFO)
+            self.loggerHandler = LoggerHandler('logs/pvlib.log', 'pvlib', 'info')
+
+        else:
+            self.loggerHandler = None
 
 
     def obtener_valores_posicion_solar_dia_completo(self, dia: str, intervalo: int = 10):

@@ -25,7 +25,7 @@ def main():
 
     # Invocación de handlers
     datetime_handler = DatetimeHandler()
-    loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', logging.INFO)
+    loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', 'info')
     valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
     config_tomlHandler = TOMLHandler('toml/config.toml')
 

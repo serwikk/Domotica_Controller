@@ -4,9 +4,9 @@ import logging
 
 class TOMLHandler:
 
-    def __init__(self, ruta_archivo, loggerHandler=None):
+    def __init__(self, ruta_archivo, logger=False):
         self.ruta_archivo = ruta_archivo
-        if loggerHandler:
+        if logger:
             self.loggerHandler = LoggerHandler() # TODO
         else:
             self.loggerHandler = None 
