@@ -65,5 +65,11 @@ def main():
 if __name__=="__main__":
 
     while True:
-        main()
-        time.sleep(60)
+        try:
+            main()
+        
+        except Exception as e:
+            print(e)
+        
+        finally:
+            time.sleep(60)

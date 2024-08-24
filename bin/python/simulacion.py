@@ -100,8 +100,8 @@ if __name__ == "__main__":
         try:
             main()
         
-        except:
-            continue
+        except Exception as e:
+            print(e)
 
-        
-        sleep(5)
+        finally:
+            sleep(5)
