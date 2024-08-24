@@ -1,6 +1,23 @@
+
+# Archivos generados por IDEs
 .venv
+
+# Archivos log
+logs
+
+# Archivos para hacer pruebas
+pruebas.py
+
+# Archivos de byte en Python
 __pycache__
 
-# Templates
+# Archivos drawio
+Arquitectura-diseño.drawio
+Arquitectura-diseño.drawio:Zone.Identifier
+
+# Archivos de cuando están abiertos los excel, word o powerpoint
+docs/~$info_sensores.xlsx
+
+# Archivos reales que tienen template
 valores_actuales.toml
 config.toml
