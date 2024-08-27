@@ -93,7 +93,7 @@ def main():
 
 
     ##### ENVÍO DE DATOS A ELASTICSEARCH #####
-    es_handler.enviar_datos(indice = datos['espacio'], datos=datos)
+    es_handler.enviar_datos(indice = f"valores_{datos['espacio']}", datos=datos)
     
 
 
