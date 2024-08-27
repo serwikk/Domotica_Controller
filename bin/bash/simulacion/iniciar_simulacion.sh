@@ -1,7 +1,7 @@
-cd /home/serwikk/Domotica_Controller
+cd /home/serwikk/Domotica_Controller_dev
 
 source .venv/bin/activate
 
 echo Iniciando simulación...
-python3 bin/python/simulacion_controlador.py & 
-python3 bin/python/factores_externos.py & 
+nohup python3 bin/python/simulacion_controlador.py & 
+nohup python3 bin/python/factores_externos.py & 

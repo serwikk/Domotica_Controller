@@ -1,4 +1,4 @@
-cd /home/serwikk/Domotica_Controller
+cd /home/serwikk/Domotica_Controller_dev
 
 source .venv/bin/activate
 
