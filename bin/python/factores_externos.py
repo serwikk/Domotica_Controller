@@ -56,17 +56,18 @@ def main():
 
     # LUX
     datos_solares = PVlibHandler(logger=True)
-    valor_lux = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
+    valor_lux_ambiente, valor_lux_resultante = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
 
-    loggerHandler.logger.info(f"Luz: {valor_lux}")
+    loggerHandler.logger.info(f"Luz ambiente: {valor_lux_ambiente}")
+    loggerHandler.logger.info(f"Luz resultante: {valor_lux_resultante}")
 
     valor_temperatura_final = generation_handler.temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_temperatura)
     valor_humedad_final = generation_handler.humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_humedad)
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura_final)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad_final)
-    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux)
-    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_resultante', valor_lux)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux_ambiente)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_resultante', valor_lux_resultante)
 
 
 if __name__=="__main__":

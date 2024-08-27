@@ -158,15 +158,15 @@ class Controlador():
             
             if humedad_ambiente < humedad_objetivo_humidificador - 1:
                 humidificador.subir_humedad_ambiente()
-                print(f"Humedad ambiente ({humedad_ambiente}%) menor que humedad objetivo - 1 ({humedad_objetivo_humidificador - 1}%). Subiendo humedad...")
+                print(f"Humedad ambiente ({humedad_ambiente}%) menor que humedad objetivo -1 ({humedad_objetivo_humidificador - 1}%). Subiendo humedad...")
             
             elif humedad_ambiente >= humedad_objetivo_humidificador - 1 and humedad_ambiente <= humedad_objetivo_humidificador + 1:
-                print(f"Humedad ambiente ({humedad_ambiente}%) cercana a la humedad objetivo ± 1 ({humedad_objetivo_humidificador - 1} - {humedad_objetivo_humidificador + 1}%).")
+                print(f"Humedad ambiente ({humedad_ambiente}%) cercana a la humedad objetivo ±1 ({humedad_objetivo_humidificador - 1} - {humedad_objetivo_humidificador + 1}%).")
                 humidificador.apagar()
             
             elif humedad_ambiente > humedad_objetivo_humidificador + 1:
                 humidificador.bajar_humedad_ambiente()
-                print(f"Humedad ambiente ({humedad_ambiente}%) mayor que humedad objetivo + 1 ({humedad_objetivo_humidificador + 1}%). Bajando humedad...")
+                print(f"Humedad ambiente ({humedad_ambiente}%) mayor que humedad objetivo +1 ({humedad_objetivo_humidificador + 1}%). Bajando humedad...")
             
     @staticmethod
     def gestionar_luz(luz_resultante, presencia, actuador_luz):
