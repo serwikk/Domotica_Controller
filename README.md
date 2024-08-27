@@ -46,10 +46,10 @@ cd *[nombre_carpeta]*
 ``source bin/bash/config/establecer_pythonpath.sh``
 
 ## 5. Copiar archivos dentro del directorio *templates* a *toml* 
-``cp templates toml``
-``cd toml``
-``mv config.template.toml config.toml``
-``mv valores_actuales.template.toml valores_actuales.toml``
+``cp templates toml``  
+``cd toml``  
+``mv config.template.toml config.toml``  
+``mv valores_actuales.template.toml valores_actuales.toml``  
 
 ## 6. Cambiar config.toml según requirimientos
 
