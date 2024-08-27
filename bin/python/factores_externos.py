@@ -34,7 +34,7 @@ def main():
     HABITACULO = config_tomlHandler.obtener_valor('config', 'habitaculo')
 
 
-    print(f"Fecha y hora: {datetime_handler.fecha_completa}")
+    loggerHandler.logger.info(f"Fecha y hora: {datetime_handler.fecha_completa}")
 
     # Temperatura
     temperatura_csv_handler = CSVHandler('src/handlers/csv/temperaturas_hora_mes_vitoria.csv')
@@ -43,7 +43,7 @@ def main():
 
     valor_temperatura = generation_handler.agregar_umbral_a_valor(valor_temperatura)
 
-    print(f"Temperatura: {valor_temperatura}")
+    loggerHandler.logger.info(f"Temperatura: {valor_temperatura}")
 
     # Humedad
     humedad_csv_handler = CSVHandler('src/handlers/csv/humedad_por_habitaciones.csv')
@@ -52,21 +52,22 @@ def main():
 
     valor_humedad = generation_handler.generar_valor_distribucion_normal(valores_espacio[0], valores_espacio[1])
 
-    print(f"Humedad: {valor_humedad}")
+    loggerHandler.logger.info(f"Humedad: {valor_humedad}")
 
     # LUX
     datos_solares = PVlibHandler(logger=True)
-    valor_lux = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
+    valor_lux_ambiente, valor_lux_resultante = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
 
-    print(f"Luz: {valor_lux}")
+    loggerHandler.logger.info(f"Luz ambiente: {valor_lux_ambiente}")
+    loggerHandler.logger.info(f"Luz resultante: {valor_lux_resultante}")
 
     valor_temperatura_final = generation_handler.temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_temperatura)
     valor_humedad_final = generation_handler.humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_humedad)
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura_final)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad_final)
-    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux)
-    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_resultante', valor_lux)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_ambiente', valor_lux_ambiente)
+    valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'luz_resultante', valor_lux_resultante)
 
 
 if __name__=="__main__":
