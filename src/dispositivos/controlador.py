@@ -13,6 +13,7 @@ from src.dispositivos.actuadores.actuador_puerta import ActuadorPuerta
 from src.dispositivos.actuadores.actuador_climatizador import ActuadorClimatizador
 from src.dispositivos.actuadores.actuador_humidificador import ActuadorHumidificador
 
+import src.handlers.generation_handler as gh
 
 class Controlador():
 
@@ -173,13 +174,15 @@ class Controlador():
 
         valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
         luz_ambiente = valores_actuales_tomlHandler.obtener_valor('valores_magnitudes', 'luz_ambiente')
+        indice_persiana = valores_actuales_tomlHandler.obtener_valor('actuadores', 'persiana')['estado']
         
         print(f"Luz ambiente: {luz_ambiente}")
         print(f"Luz resultante: {luz_resultante}")
         print(f"Presencia: {presencia}")
+        print(f"Índice persiana: {indice_persiana}")
 
         if presencia and luz_ambiente < 5:
             actuador_luz.encender()
 
         else:
-            actuador_luz.apagar(luz_ambiente)
+            actuador_luz.apagar(gh.generar_valor_polinomico(luz_ambiente, indice_persiana))
