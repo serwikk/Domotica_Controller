@@ -181,7 +181,7 @@ class Controlador():
         print(f"Presencia: {presencia}")
         print(f"Índice persiana: {indice_persiana}")
 
-        if presencia and luz_ambiente < 5:
+        if presencia and luz_resultante < 5:
             actuador_luz.encender()
 
         else:
