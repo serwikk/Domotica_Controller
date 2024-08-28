@@ -24,17 +24,22 @@ def main():
     """
 
     # Invocación de handlers
-    datetime_handler = DatetimeHandler()
-    loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', 'info')
-    valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
-    config_tomlHandler = TOMLHandler('toml/config.toml')
+
+    def obtener_habitaculo_sin_numero(habitaculo):
+        
+        if "dormitorio" in habitaculo:
+            return "dormitorio"
+        
+        if "aseo" in habitaculo:
+            return "aseo"
+        
+        if "cocina" in habitaculo:
+            return "cocina"
 
 
     HUSO = config_tomlHandler.obtener_valor('config', 'huso')
-    HABITACULO = config_tomlHandler.obtener_valor('config', 'habitaculo')
+    HABITACULO = obtener_habitaculo_sin_numero(config_tomlHandler.obtener_valor('config', 'habitaculo'))
 
-
-    loggerHandler.logger.info(f"Fecha y hora: {datetime_handler.fecha_completa}")
 
     # Temperatura
     temperatura_csv_handler = CSVHandler('src/handlers/csv/temperaturas_hora_mes_vitoria.csv')
@@ -43,7 +48,6 @@ def main():
 
     valor_temperatura = generation_handler.agregar_umbral_a_valor(valor_temperatura)
 
-    loggerHandler.logger.info(f"Temperatura: {valor_temperatura}")
 
     # Humedad
     humedad_csv_handler = CSVHandler('src/handlers/csv/humedad_por_habitaciones.csv')
@@ -52,17 +56,17 @@ def main():
 
     valor_humedad = generation_handler.generar_valor_distribucion_normal(valores_espacio[0], valores_espacio[1])
 
-    loggerHandler.logger.info(f"Humedad: {valor_humedad}")
 
     # LUX
     datos_solares = PVlibHandler(logger=True)
     valor_lux_ambiente, valor_lux_resultante = datos_solares.obtener_lux(datetime_handler, config_tomlHandler, valores_actuales_tomlHandler)
 
-    loggerHandler.logger.info(f"Luz ambiente: {valor_lux_ambiente}")
-    loggerHandler.logger.info(f"Luz resultante: {valor_lux_resultante}")
 
     valor_temperatura_final = generation_handler.temperatura_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_temperatura)
     valor_humedad_final = generation_handler.humedad_interna_externa(valores_actuales_tomlHandler, config_tomlHandler, valor_humedad)
+
+    loggerHandler.logger.info(f"Temperatura: {valor_temperatura}, Humedad: {valor_humedad}, Luz ambiente: {valor_lux_ambiente}, Luz resultante: {valor_lux_resultante}")
+
 
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'temperatura', valor_temperatura_final)
     valores_actuales_tomlHandler.establecer_valor('valores_magnitudes', 'humedad', valor_humedad_final)
@@ -71,13 +75,15 @@ def main():
 
 
 if __name__=="__main__":
+    
+    datetime_handler = DatetimeHandler()
+    loggerHandler = LoggerHandler(f'logs/factores_externos.log', 'factores_externos', 'info')
+    valores_actuales_tomlHandler = TOMLHandler('toml/valores_actuales.toml')
+    config_tomlHandler = TOMLHandler('toml/config.toml')
 
     while True:
-        try:
-            main()
-        
-        except Exception as e:
-            print(e)
-        
-        finally:
-            time.sleep(60)
+       
+        main()
+    
+    
+        time.sleep(60)
