@@ -1,0 +1,62 @@
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+# VALORES DEL PRECIO DE LA LUZ 
+5 * * * * /usr/bin/python3 /home/serwikk/Domotica/src/obtener_precio_luz_actual.py >/dev/null 2>&1
+31 12 * * * /usr/bin/python3 /home/serwikk/Domotica/src/obtener_precio_luz_media.py >/dev/null 2>&1
+
+# COCINA
+# desayuno - 5 minutos
+0 8 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+5 8 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/cocinar.sh 300 >/dev/null 2>&1
+30 8 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/salir.sh >/dev/null 2>&1
+
+# comida - 15 minutos
+25 13 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+30 13 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/cocinar.sh 900 >/dev/null 2>&1
+0 14 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/salir.sh >/dev/null 2>&1
+
+# cena - 20 minutos
+25 21 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+30 21 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/cocinar.sh 1200 >/dev/null 2>&1
+0 22 * * * bash /home/serwikk/Domotica_Controller_Cocina/bin/bash/acciones/salir.sh >/dev/null 2>&1
+
+# DUCHA
+40 8 * * * bash /home/serwikk/Domotica_Controller_Aseo/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+45 8 * * * bash /home/serwikk/Domotica_Controller_Aseo/bin/bash/acciones/duchar.sh 300 >/dev/null 2>&1
+0 9 * * * bash /home/serwikk/Domotica_Controller_Aseo/bin/bash/acciones/salir.sh >/dev/null 2>&1
+
+# HABITACIÓN
+
+# siesta
+0 14 * * * bash /home/serwikk/Domotica_Controller_Dormitorio1/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+0 15 * * * bash /home/serwikk/Domotica_Controller_Dormitorio1/bin/bash/acciones/salir.sh >/dev/null 2>&1
+
+# lectura antes de cenar
+45 20 * * * bash /home/serwikk/Domotica_Controller_Dormitorio1/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+24 21 * * * bash /home/serwikk/Domotica_Controller_Dormitorio1/bin/bash/acciones/salir.sh >/dev/null 2>&1
+
+# dormir
+0 22 * * * bash /home/serwikk/Domotica_Controller_Dormitorio1/bin/bash/acciones/entrar.sh >/dev/null 2>&1
+0 8 * * * bash /home/serwikk/Domotica_Controller_Dormitorio1/bin/bash/acciones/salir.sh >/dev/null 2>&1
