@@ -1,5 +1,5 @@
 #!/bin/bash
 
-export PYTHONPATH="$(pwd)"
+export PYTHONPATH="/home/serwikk/Domotica_Controller_Cocina"
 
 echo "PYTHONPATH configurado: $PYTHONPATH"
